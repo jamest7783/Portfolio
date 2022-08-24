@@ -1,8 +1,10 @@
-const Home=()=>{
+const Home=({grid})=>{
 
     return(
-        <div id='sheet'>
-            <h1>background</h1>
+        <div id='surface'> 
+            <div id='grid'>
+                {grid}
+            </div>
         </div>
     )
 }

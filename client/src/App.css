@@ -1,5 +1,5 @@
 @import 'animate.css';
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@100;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@300&display=swap');
 
 #DOM{
     margin:0;
@@ -28,54 +28,5 @@
     display:flex;
     justify-content:center;
     align-items:center;
-    font-family:'Fira Code', monospace;
+    font-family: 'Encode Sans', sans-serif;
 }
-#flip1{
-    animation: flipOnY 5s linear infinite;
-}
-#flip2{
-    animation: flipOnY 5s linear infinite;
-    animation-delay: 7s;
-}
-#flip3{
-    animation: flipOnY 5s linear infinite;
-    animation-delay: 15s;
-}
-#flip4{
-    animation: flipOnY 5s linear infinite;
-    animation-delay: 20s;
-}
-#flip5{
-    animation: flipOnY 5s linear infinite;
-    animation-delay: 29s;
-}
-#flip6{
-    animation: flipOnY 5s linear infinite;
-    animation-delay: 13s;
-}
-#flip7{
-    animation: flipOnY 5s linear infinite;
-    animation-delay: 42s;
-}
-#flip8{
-    animation: flipOnY 5s linear infinite;
-    animation-delay: 2s;
-}
-#flip9{
-    animation: flipOnY 5s linear infinite;
-    animation-delay: 16s;
-}
-#flip10{
-    animation: flipOnY 5s linear infinite;
-    animation-delay: 9s;
-}
-
-@keyframes flipOnY {
-    0% {transform: rotateY(0deg)}
-    35% {transform: rotateY(0deg)}
-    50% {transform: rotateY(-180deg)}
-    85% {transform: rotateY(-180deg)}
-    100% {transform: rotateY(0deg)}
-}
-
- 

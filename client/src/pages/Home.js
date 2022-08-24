@@ -13,15 +13,12 @@ const Home=({grid})=>{
         85% {transform: rotateY(-180deg)}
         100% {transform: rotateY(0deg)}
     `
-
     for(let i=0;i<10000;i++){
-
         column++
         if(column>100){
             row++
             column=1    
         }
-
         if(Math.random()<0.1){
             const Unit=styled.div`
                 animation: ${flipOnY} 5s linear infinite;

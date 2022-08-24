@@ -1,11 +1,10 @@
 import styled,{keyframes} from 'styled-components'
 
-const Home=({grid})=>{
+const Grid=({grid})=>{
 
     let units=[]
     let row=1
     let column=0
-
     const flipOnY=keyframes`
         0% {transform: rotateY(0deg)}
         35% {transform: rotateY(0deg)}
@@ -38,12 +37,13 @@ const Home=({grid})=>{
     }
 
     return(
-        <div id='surface'> 
+        <div> 
             <div id='grid'>
                 {units}
-
             </div>
         </div>
     )
+
 }
-export default Home
+
+export default Grid

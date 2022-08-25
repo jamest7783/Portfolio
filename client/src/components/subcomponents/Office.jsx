@@ -13,6 +13,7 @@ const Office=()=>{
                     <br></br>
                     <div id='line5'><div id='Line5'>What's yours?</div></div>
                 </div>
+                <div id='me-typing'></div>
             </div>
         </div>
     )

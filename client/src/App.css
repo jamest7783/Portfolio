@@ -19,7 +19,6 @@
     grid-template:
         repeat(100,minmax(7px,7px))/
         repeat(100,minmax(7px,7px));
-    
 }
 .unit{
     margin:0;
@@ -58,8 +57,9 @@
     white-space:nowrap;
     letter-spacing:.1em;
     animation:
-        type 1.5s steps(16, end),
-        blinking-caret .75s step-end 2s;
+        type 1.5s steps(15, end),
+        blinking-caret .75s step-end 4,
+        disolve-caret .01s linear 3s 1 forwards;
 }
 #line1{width:83px;}
 #Line2{
@@ -70,8 +70,10 @@
     white-space:nowrap;
     letter-spacing:.1em;
     animation:
-        type 1.5s steps(15, end),
-        blinking-caret .75s step-end infinite;
+        appear 3s linear,
+        type 3s steps(20, end) 2.8s,
+        blinking-caret .75s step-end 4,
+        disolve-caret .01s linear 6s 1 forwards; 
 }
 #line2{width:214px}
 #Line3{
@@ -82,8 +84,10 @@
     white-space:nowrap;
     letter-spacing:.1em;
     animation:
-        type 1.5s steps(15, end),
-        blinking-caret .75s step-end infinite;
+        appear 6.2s linear,
+        type 3s steps(20, end) 6s,
+        blinking-caret .75s step-end 4,
+        disolve-caret .01s linear 9s 1 forwards;
 }
 #line3{width:214px}
 #Line4{
@@ -94,10 +98,13 @@
     white-space:nowrap;
     letter-spacing:.1em;
     animation:
-        type 1.5s steps(15, end),
-        blinking-caret .75s step-end infinite;
+        appear 9.1s linear,
+        type 3s steps(20, end) 8.9s,
+        blinking-caret .75s step-end 4,
+        disolve-caret .01s linear 12s 1 forwards;
+
 }
-#line4{width:214px}
+#line4{width:136px}
 #Line5{
     margin:0;
     font-size:80%;
@@ -106,10 +113,50 @@
     white-space:nowrap;
     letter-spacing:.1em;
     animation:
-        type 1.5s steps(15, end),
-        blinking-caret .75s step-end infinite;
+        appear 12.5s linear,
+        type 1.5s steps(15, end) 12.3s,
+        blinking-caret .75s step-end 4;
+
 }
-#line5{width:214px}
+#line5{width:98px}
+@keyframes blinking-caret{
+    0%{border-color:transparent;}
+    50%{border-color:black;}
+    100%{border-color:transparent;}
+}
+@keyframes type{
+    0%{width:0}
+    100%{width:100%}
+}
+@keyframes disolve-caret{
+    0%{border-color:black;}
+    100%{border-color:transparent;}
+}
+@keyframes appear{
+    0%{opacity:0;}
+    99%{opacity:0;}
+    100%{opacity:1;}
+}
+#me-typing{
+    margin-left:200px;
+    margin-top:70px;
+    height:30px;
+    width:40px;
+    background:url('stick-figure.png');
+    background-size:contain;
+}
+#linkedin{
+    height:100px;
+    width:100px;
+    background:url('github-icon.png');
+    background-size:contain;
+    border-radius: 50%;
+}
+
+
+
+ 
+
 
  
 
@@ -142,15 +189,8 @@
         type 1.5s steps(15, end),
         blinking-caret .75s step-end infinite,
 }
-@keyframes type{
-    0%{width:0}
-    100%{width:100%}
-}
-@keyframes blinking-caret{
-    0%,100%{border-color:transparent;}
-    50%{border-color:black;}
-}
 
+ 
 
 
   

@@ -28,34 +28,119 @@
     display:flex;
     justify-content:center;
     align-items:center;
-    font-family: 'Encode Sans', sans-serif;
+    font-family:'Encode Sans',sans-serif;
 }
+#story-board{
+    position:fixed;
+    height:700px;
+    width:700px;
+    /* border:1px solid black; */
+    background:transparent;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+#office{
+    margin:0;
+    height:238px;
+    width:238px;
+    background:white;
+}
+#monitor{
+    padding-left:7px;
+    padding-top:7px;
+    font-family:'Encode Sans',sans-serif;
+}
+#Line1{
+    margin:0;
+    border-right:.1em solid black;
+    overflow:hidden;
+    white-space:nowrap;
+    letter-spacing:.1em;
+    animation:
+        type 1.5s steps(16, end),
+        blinking-caret .75s step-end 2s;
+}
+#line1{width:83px;}
+#Line2{
+    margin:0;
+    font-size:80%;
+    border-right:.1em solid black;
+    overflow:hidden;
+    white-space:nowrap;
+    letter-spacing:.1em;
+    animation:
+        type 1.5s steps(15, end),
+        blinking-caret .75s step-end infinite;
+}
+#line2{width:214px}
+#Line3{
+    margin:0;
+    font-size:80%;
+    border-right:.1em solid black;
+    overflow:hidden;
+    white-space:nowrap;
+    letter-spacing:.1em;
+    animation:
+        type 1.5s steps(15, end),
+        blinking-caret .75s step-end infinite;
+}
+#line3{width:214px}
+#Line4{
+    margin:0;
+    font-size:80%;
+    border-right:.1em solid black;
+    overflow:hidden;
+    white-space:nowrap;
+    letter-spacing:.1em;
+    animation:
+        type 1.5s steps(15, end),
+        blinking-caret .75s step-end infinite;
+}
+#line4{width:214px}
+#Line5{
+    margin:0;
+    font-size:80%;
+    border-right:.1em solid black;
+    overflow:hidden;
+    white-space:nowrap;
+    letter-spacing:.1em;
+    animation:
+        type 1.5s steps(15, end),
+        blinking-caret .75s step-end infinite;
+}
+#line5{width:214px}
+
+ 
+
+
+
+
+
+
+
+
+
 #container{
     background:white;
     height:350px;
     width:350px;
     position:fixed;
-    /* animation: scaleEnter 3s linear 1; */
     display:flex;
     flex-direction:column;
-    justify-content:center;
-    align-items:center;
+    justify-content:flex-start;
+    align-items:flex-start;
     font-family:'Encode Sans',sans-serif;
 }
-@keyframes scaleEnter{
-    0%{transform:scale(0);}
-    100%{transform:scale(1);}
-}
-#welcome{
-    overflow:hidden;
-    border-right:.1em solid black;
-    white-space:nowrap;
+#-type-text{
     margin:0;
+    border-right:.1em solid black;
+    overflow:hidden;
+    white-space:nowrap;
     letter-spacing:.1em;
     animation:
         type 1.5s steps(15, end),
         blinking-caret .75s step-end infinite,
-        hold-center 1.5s linear 1;
 }
 @keyframes type{
     0%{width:0}
@@ -131,4 +216,8 @@
 @keyframes blinking-caret{
     from,to{border-color:white}
     50%{border-color:black}
+}
+@keyframes scaleEnter{
+    0%{transform:scale(0);}
+    100%{transform:scale(1);}
 }

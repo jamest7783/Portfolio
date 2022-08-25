@@ -1,12 +1,12 @@
 import Grid from "../components/Grid"
-import Container from '../components/Container'
+import StoryBoard from '../components/StoryBoard'
 
 const Canvas=()=>{
 
     return(
         <div id='canvas'>
-            <Grid />
-            {/* <Container /> */}
+            <Grid/>
+            <StoryBoard/> 
         </div>
     )
 }

@@ -19,7 +19,7 @@ const Grid=({grid})=>{
             row++
             column=1    
         }
-        if(Math.random()<0.1){
+        if(Math.random()<0.01){
             const Unit=styled.div`
                 animation: ${flipOnY} 5s linear infinite;
                 animation-delay:${Math.random()*200}s;

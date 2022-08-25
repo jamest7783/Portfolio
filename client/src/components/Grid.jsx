@@ -1,4 +1,5 @@
 import styled,{keyframes} from 'styled-components'
+ 
 
 const Grid=({grid})=>{
 

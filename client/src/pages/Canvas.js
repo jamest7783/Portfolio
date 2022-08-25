@@ -1,12 +1,12 @@
 import Grid from "../components/Grid"
-import Message from "../components/Message"
+import Container from '../components/Container'
 
 const Canvas=()=>{
 
     return(
         <div id='canvas'>
             <Grid />
-            <Message /> 
+            {/* <Container /> */}
         </div>
     )
 }

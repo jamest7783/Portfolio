@@ -5,9 +5,7 @@ const Message=()=>{
 
     return(
         <div id='msg'>
-            <div id='welcome'>
                 Welcome to my portfolio.
-            </div>
         </div>
     )
 }

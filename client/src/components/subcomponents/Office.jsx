@@ -2,8 +2,8 @@
 const Office=()=>{
 
     return(
-        <div>
-            <div id='office'>
+        <div id='office'>
+            <div>
                 <div id='monitor'>
                     <div id='line1'><div id='Line1'>Welcome.</div></div>
                     <br></br>
@@ -13,7 +13,7 @@ const Office=()=>{
                     <br></br>
                     <div id='line5'><div id='Line5'>What's yours?</div></div>
                 </div>
-                <div id='me-typing'></div>
+                <div id='developer'></div>
             </div>
         </div>
     )

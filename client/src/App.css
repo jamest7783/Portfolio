@@ -33,17 +33,23 @@
     position:fixed;
     height:700px;
     width:700px;
-    /* border:1px solid black; */
     background:transparent;
-    display:flex;
-    justify-content:center;
-    align-items:center;
+    display:grid;
+    grid-template: 
+        repeat(100,7px)/
+        repeat(100,7px);
+
 }
 #office{
+    grid-area:33/33/67/67;
     margin:0;
-    height:238px;
-    width:238px;
     background:white;
+    transform-origin:bottom right;
+    animation: close-laptop 2s linear 16s forwards;
+}
+@keyframes close-laptop{
+    0%{transform:scaleY(1);}
+    100%{transform:scaleY(.29);}
 }
 #monitor{
     padding-left:7px;
@@ -142,15 +148,79 @@
     margin-top:70px;
     height:30px;
     width:40px;
-    background:url('stick-figure.png');
+    /* background:url('stick-figure.png'); */
     background-size:contain;
 }
 #linkedin{
+    margin-top:10px;
     height:100px;
     width:100px;
-    background:url('github-icon.png');
+    background:green;
+    /* background:url('github-icon.png'); */
     background-size:contain;
     border-radius: 50%;
+}
+.house{
+    margin:0;
+    background:white;
+}
+#hall-1{grid-area:57/23/67/33;}
+#elevator-shaft-1{grid-area:67/24/57/16;}
+#elevator-shaft-2{grid-area:56/24/46/16;}
+#elevator-shaft-3{grid-area:45/24/35/16;}
+#elevator-shaft-4{grid-area:34/24/24/16;}
+#elevator-shaft-5{grid-area:23/24/13/16;}
+#balcony{grid-area:13/2/23/10;}
+#rail{grid-area:13/1/19/1;}
+#hall-2{grid-area:13/29/23/70;}
+#step-1{grid-area:13/72/23/75;}
+#step-2{grid-area:15/75/25/78;}
+#step-3{grid-area:17/78/27/81;}
+#step-4{grid-area:19/81/29/84;}
+#step-5{grid-area:21/84/31/87;}
+#step-6{grid-area:23/87/33/90;}
+#step-7{grid-area:25/90/35/93;}
+#landing{grid-area:27/93/37/100;}
+
+
+
+
+
+.frame{
+    background:url('./assets/frame.jpg');
+    background-size:contain;
+}
+#frame-1{grid-area:14/33/21/38;}
+#frame-2{grid-area:14/43/21/48;}
+#frame-3{grid-area:14/52/21/57;}
+#frame-4{grid-area:14/61/21/66;} 
+#framed-pic-1{
+    grid-area:15/34/20/37;
+    background:url('assets/github-icon.png');
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position:center;
+}
+#framed-pic-2{
+    grid-area:15/44/20/47;
+    background:url('assets/linkedin-icon1.png');
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position:center;
+}
+#framed-pic-3{
+    grid-area:15/53/20/56;
+    background:url('assets/trello-icon.png');
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position:center;
+}
+#framed-pic-4{
+    grid-area:15/62/20/65;
+    background:url('assets/washington.jpg');
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:center;
 }
 
 
@@ -159,6 +229,31 @@
 
 
  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

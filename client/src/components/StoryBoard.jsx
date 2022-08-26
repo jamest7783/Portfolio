@@ -32,6 +32,9 @@ const StoryBoard=()=>{
             <div className='house' id='landing'></div>
             <div className='house' id='garage'></div>
             <div id='miata'></div>
+            <div id='van'></div>
+            <div className='house' id='screen-room'></div>
+            <div id='projection-screen'></div>
 
         </div>
     )

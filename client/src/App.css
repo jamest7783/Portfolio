@@ -181,8 +181,15 @@
 #step-6{grid-area:23/87/33/90;}
 #step-7{grid-area:25/90/35/93;}
 #landing{grid-area:27/93/37/100;}
-#garage{grid-area:90/2/100/40;}
-
+#garage{grid-area:87/2/100/60;}
+#screen-room{grid-area:70/60/90/99;}
+#projection-screen{
+    grid-area:70/72/89/95;
+    background:url('assets/projection-screen.png');
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position:center;
+}
 
 .frame{
     background:url('./assets/frame.jpg');
@@ -221,10 +228,17 @@
     background-position:center;
 }
 #miata{
-    grid-area:91/3/100/39;
+    grid-area:91/2/100/35;
     background:url('assets/miata.jpg');
     background-repeat:no-repeat;
     background-size:contain;
+    background-position:right;
+}
+#van{
+    grid-area:87/32/100/59;
+    background:url('assets/van.jpeg');
+    background-repeat:no-repeat;
+    background-size:140px;
     background-position:right;
 }
 

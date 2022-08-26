@@ -5,6 +5,9 @@ const StoryBoard=()=>{
     return(
         <div id='story-board'>
             <Office />
+            <div id='door-1'></div> 
+            <div id='door-2'></div> 
+            <div id='door-3'></div> 
             <div className='house' id='hall-1'></div>
             <div className='house' id='elevator-shaft-1'></div>
             <div className='house' id='elevator-shaft-2'></div>
@@ -22,22 +25,34 @@ const StoryBoard=()=>{
             <div id='framed-pic-2'></div>
             <div id='framed-pic-3'></div>
             <div id='framed-pic-4'></div>
+            <div className='house' id='hall-3'></div>
             <div className='house' id='step-1'></div>
             <div className='house' id='step-2'></div>
             <div className='house' id='step-3'></div>
             <div className='house' id='step-4'></div>
             <div className='house' id='step-5'></div>
             <div className='house' id='step-6'></div>
+
             <div className='house' id='step-7'></div>
+            <div className='house' id='step-8'></div>
+            <div className='house' id='step-9'></div>
+            <div className='house' id='step-10'></div>
+            <div className='house' id='step-11'></div>
+            <div className='house' id='step-12'></div>
+            <div className='house' id='step-13'></div>
+            <div className='house' id='step-14'></div>
+            <div className='house' id='step-15'></div>
+            <div className='house' id='step-16'></div>
+            <div className='house' id='step-17'></div>
+            <div className='house' id='step-18'></div>
+            <div className='house' id='step-19'></div>
+            <div className='house' id='step-20'></div>
+            <div className='house' id='step-21'></div>
             <div className='house' id='landing'></div>
             <div className='house' id='garage-1'></div>
             <div className='house' id='garage-2'></div>
-            <div className='house' id='garage-3'></div>
             <div id='miata'></div>
-            <div id='m3'></div>
-            <div id='ranger'></div>
-            <div className='house' id='screen-room'></div>
-            <div id='projection-screen'></div>
+            <div id='mustang'></div>
 
         </div>
     )

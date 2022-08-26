@@ -181,15 +181,39 @@
 #step-6{grid-area:23/87/33/90;}
 #step-7{grid-area:25/90/35/93;}
 #landing{grid-area:27/93/37/100;}
-#garage{grid-area:87/2/100/60;}
-#screen-room{grid-area:70/60/90/99;}
-#projection-screen{
-    grid-area:70/72/89/95;
-    background:url('assets/projection-screen.png');
-    background-size:contain;
+#garage-1{grid-area:85/2/100/40;}
+#garage-2{grid-area:85/79/100/100;}
+/* #garage-3{grid-area:87/69/100/84;}
+#ranger{
+    grid-area:91/70/100/83;
+    background:url('assets/ranger.png');
     background-repeat:no-repeat;
-    background-position:center;
+    background-size:contain;
+    background-position:right;
+} */
+#m3{
+    grid-area:88/80/100/100;
+    background:url('assets/ranger.jpg');
+    background-repeat:no-repeat;
+    background-size:contain;
 }
+
+#miata{
+    grid-area:91/5/100/38;
+    background:url('assets/miata.jpg');
+    background-repeat:no-repeat;
+    background-size:contain;
+    background-position:right;
+}
+/* #m3{
+    grid-area:90/36/100/60;
+    background:url('assets/bmw-m3.jpg');
+    background-repeat:no-repeat;
+    background-size:contain;
+    background-position:right;
+} */
+
+
 
 .frame{
     background:url('./assets/frame.jpg');
@@ -227,32 +251,26 @@
     background-repeat:no-repeat;
     background-position:center;
 }
-#miata{
-    grid-area:91/2/100/35;
-    background:url('assets/miata.jpg');
-    background-repeat:no-repeat;
+
+
+
+
+
+ 
+
+
+ 
+
+
+
+/* #screen-room{grid-area:70/60/90/99;} */
+/* #projection-screen{
+    grid-area:70/72/89/95;
+    background:url('assets/projection-screen.png');
     background-size:contain;
-    background-position:right;
-}
-#van{
-    grid-area:87/32/100/59;
-    background:url('assets/van.jpeg');
     background-repeat:no-repeat;
-    background-size:140px;
-    background-position:right;
-}
-
-
-
- 
-
-
- 
-
-
-
-
-
+    background-position:center;
+} */
 
 
 

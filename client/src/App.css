@@ -181,9 +181,7 @@
 #step-6{grid-area:23/87/33/90;}
 #step-7{grid-area:25/90/35/93;}
 #landing{grid-area:27/93/37/100;}
-
-
-
+#garage{grid-area:90/2/100/40;}
 
 
 .frame{
@@ -221,6 +219,13 @@
     background-size:cover;
     background-repeat:no-repeat;
     background-position:center;
+}
+#miata{
+    grid-area:91/3/100/39;
+    background:url('assets/miata.jpg');
+    background-repeat:no-repeat;
+    background-size:contain;
+    background-position:right;
 }
 
 

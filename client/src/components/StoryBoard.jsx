@@ -15,9 +15,15 @@ const StoryBoard=()=>{
             <div className='house' id='elevator-shaft-3'></div>
             <div className='house' id='elevator-shaft-4'></div>
             <div className='house' id='elevator-shaft-5'></div>
+            <div className='house' id='elevator-shaft-6'></div>
+            <div className='house' id='elevator-shaft-7'></div>
+            <div className='house' id='elevator-shaft-8'></div>
             <div className='house' id='balcony'></div>
             <div className='house' id='rail'></div>
             <div className='house' id='hall-2'></div>
+
+
+
             <div className='frame' id='frame-1'></div>
             <div className='frame' id='frame-2'></div>
             <div className='frame' id='frame-3'></div>

@@ -9,6 +9,7 @@ const StoryBoard=()=>{
             <div id='door-2'></div> 
             <div id='door-3'></div> 
             <div className='house' id='hall-1'></div>
+            <div className='house' id='elevator-shaft-0'></div>
             <div className='house' id='elevator-shaft-1'></div>
             <div className='house' id='elevator-shaft-2'></div>
             <div className='house' id='elevator-shaft-3'></div>

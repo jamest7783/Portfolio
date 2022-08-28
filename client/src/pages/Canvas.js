@@ -1,4 +1,5 @@
 import Grid from "../components/Grid"
+import House from '../components/House'
 import StoryBoard from '../components/StoryBoard'
 
 const Canvas=()=>{
@@ -6,7 +7,7 @@ const Canvas=()=>{
     return(
         <div id='canvas'>
             <Grid/>
-            {/* <StoryBoard/>  */}
+            <House />
         </div>
     )
 }

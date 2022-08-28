@@ -6,7 +6,7 @@ const Canvas=()=>{
     return(
         <div id='canvas'>
             <Grid/>
-            <StoryBoard/> 
+            {/* <StoryBoard/>  */}
         </div>
     )
 }

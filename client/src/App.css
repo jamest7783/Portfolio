@@ -41,7 +41,7 @@
 
 }
 #office{
-    grid-area:33/33/67/67;
+    grid-area:31/33/71/67;
     margin:0;
     background:white;
     transform-origin:bottom right;
@@ -164,7 +164,7 @@
     margin:0;
     background:white;
 }
-#hall-1{grid-area:33/33/67/67;} 
+#hall-1{grid-area:27/33/71/67;} 
 
 #elevator-shaft-1{grid-area:3/4/15/12;}
 #elevator-shaft-2{grid-area:17/4/29/12;}
@@ -180,7 +180,7 @@
 
  
 
-#hall-2{grid-area:21/33/31/67;}
+#hall-2{grid-area:17/33/29/67;}
 .frame{
     background:url('./assets/frame.jpg');
     background-size:contain;
@@ -238,9 +238,9 @@
 #step-17{grid-area:77/88/87/92;}
 #step-18{grid-area:79/92/89/98;} 
 
-#hall-3{grid-area:69/33/79/67;}
-/* #garage-1{grid-area:90/2/100/40;}
-#miata{
+#hall-3{grid-area:73/33/85/67;}
+/* #garage-1{grid-area:91/70/100/98;} */
+/* #miata{
     grid-area:93/5/100/38;
     background:url('assets/miata.jpg');
     background-repeat:no-repeat;

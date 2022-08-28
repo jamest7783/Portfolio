@@ -10,6 +10,7 @@
     display:flex;
     justify-content:center;
     align-items:center;
+    border-radius:100px;
 }
 #grid{
     margin:0;
@@ -19,6 +20,11 @@
     grid-template:
         repeat(100,minmax(7px,7px))/
         repeat(100,minmax(7px,7px));
+    border-radius:50%;
+    overflow:hidden;
+    background: radial-gradient(black,white);
+    background-clip: text;
+    color: transparent;
 }
 .unit{
     margin:0;
@@ -29,6 +35,65 @@
     align-items:center;
     font-family:'Encode Sans',sans-serif;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 #story-board{
     position:fixed;
     height:700px;
@@ -148,7 +213,7 @@
     margin-top:70px;
     height:30px;
     width:40px;
-    /* background:url('stick-figure.png'); */
+    /* background:url('stick-figure.png');
     background-size:contain;
 }
 #linkedin{
@@ -156,7 +221,7 @@
     height:100px;
     width:100px;
     background:green;
-    /* background:url('github-icon.png'); */
+    /* background:url('github-icon.png'); 
     background-size:contain;
     border-radius: 50%;
 }
@@ -176,7 +241,7 @@
 
 
 
-/* #elevator-shaft-8{grid-area:81/22/92/30;} */
+/* #elevator-shaft-8{grid-area:81/22/92/30;} 
 
  
 
@@ -365,6 +430,561 @@
 
 
 
+/*
+
+#container{
+    background:white;
+    height:350px;
+    width:350px;
+    position:fixed;
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-start;
+    align-items:flex-start;
+    font-family:'Encode Sans',sans-serif;
+}
+#-type-text{
+    margin:0;
+    border-right:.1em solid black;
+    overflow:hidden;
+    white-space:nowrap;
+    letter-spacing:.1em;
+    animation:
+        type 1.5s steps(15, end),
+        blinking-caret .75s step-end infinite,
+}
+
+ 
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+#msg{
+    position: absolute;
+    background-color:white;
+    overflow:hidden;
+    border-right:.15em solid black;
+    white-space:nowrap;
+    margin:0;
+    letter-spacing:.15em;
+    font-family:'Encode Sans', sans-serif;
+}
+
+
+
+@keyframes typing {
+    from {width:0}
+    to {width:100%}
+}
+@keyframes blinking-caret{
+    from,to{border-color:white}
+    50%{border-color:black}
+}
+@keyframes scaleEnter{
+    0%{transform:scale(0);}
+    100%{transform:scale(1);}
+}
+
+
+
+/*@import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@300&display=swap');
+
+#DOM{
+    margin:0;
+}
+#canvas{
+    margin:0;
+    height:100vh;
+    width:100vw;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+#grid{
+    margin:0;
+    width:700px;
+    height:700px;
+    display:grid;
+    grid-template:
+        repeat(100,minmax(7px,7px))/
+        repeat(100,minmax(7px,7px));
+}
+.unit{
+    margin:0;
+    padding:0;
+    font-size:40%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-family:'Encode Sans',sans-serif;
+}
+#story-board{
+    position:fixed;
+    height:700px;
+    width:700px;
+    background:transparent;
+    display:grid;
+    grid-template: 
+        repeat(100,7px)/
+        repeat(100,7px);
+}
+.house{background:white;}
+#lair{grid-area:33/33/67/67}
+#garage{grid-area:88/2/100/23}
+#balcony{grid-area:19/85/31/100} 
+#balcony-rail{grid-area:19/100/27/101} 
+#library{grid-area:10/100/17/101}
+#step-1{grid-area:58/67/70/70;}
+#step-2{grid-area:61/70/73/73;}
+#step-3{grid-area:64/73/76/76;}
+#step-4{grid-area:67/76/79/79;}
+#step-5{grid-area:70/79/82/82;}
+#step-6{grid-area:73/82/85/85;}
+#step-7{grid-area:76/85/88/88;}
+#step-8{grid-area:79/88/91/91;}
+#step-9{grid-area:82/91/94/94;}
+#step-10{grid-area:85/94/97/97;}
+#step-11{grid-area:88/97/99/100;}
+/* #step-12{grid-area:83/100/91/85;} 
+
+
+
+
+#miata{
+    grid-area:93/1/100/23;
+    background:url('assets/miata.jpg');
+    background-repeat:no-repeat;
+    background-size:contain;
+    background-position:right;
+}
+
+
+
+
+
+
+@keyframes transport{
+    0%{transform:translateY(0)}
+    40%{transform:translateY(231px)}
+    50%{transform:translateY(231px)}
+    90%{transform:translateY(0)}
+    10%{transform:translateY(0)}
+}
+#elevator{
+    grid-area:55/24/67/32;
+    animation: transport 10s linear 3s 4 forwards; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#office{
+    grid-area:31/33/71/67;
+    margin:0;
+    background:white;
+    transform-origin:bottom right;
+    animation: close-laptop 2s linear 16s forwards;
+}
+@keyframes close-laptop{
+    0%{transform:scaleY(1);}
+    100%{transform:scaleY(.29);}
+}
+#monitor{
+    padding-left:7px;
+    padding-top:7px;
+    font-family:'Encode Sans',sans-serif;
+}
+#Line1{
+    margin:0;
+    border-right:.1em solid black;
+    overflow:hidden;
+    white-space:nowrap;
+    letter-spacing:.1em;
+    animation:
+        type 1.5s steps(15, end),
+        blinking-caret .75s step-end 4,
+        disolve-caret .01s linear 3s 1 forwards;
+}
+#line1{width:83px;}
+#Line2{
+    margin:0;
+    font-size:80%;
+    border-right:.1em solid black;
+    overflow:hidden;
+    white-space:nowrap;
+    letter-spacing:.1em;
+    animation:
+        appear 3s linear,
+        type 3s steps(20, end) 2.8s,
+        blinking-caret .75s step-end 4,
+        disolve-caret .01s linear 6s 1 forwards; 
+}
+#line2{width:214px}
+#Line3{
+    margin:0;
+    font-size:80%;
+    border-right:.1em solid black;
+    overflow:hidden;
+    white-space:nowrap;
+    letter-spacing:.1em;
+    animation:
+        appear 6.2s linear,
+        type 3s steps(20, end) 6s,
+        blinking-caret .75s step-end 4,
+        disolve-caret .01s linear 9s 1 forwards;
+}
+#line3{width:214px}
+#Line4{
+    margin:0;
+    font-size:80%;
+    border-right:.1em solid black;
+    overflow:hidden;
+    white-space:nowrap;
+    letter-spacing:.1em;
+    animation:
+        appear 9.1s linear,
+        type 3s steps(20, end) 8.9s,
+        blinking-caret .75s step-end 4,
+        disolve-caret .01s linear 12s 1 forwards;
+
+}
+#line4{width:136px}
+#Line5{
+    margin:0;
+    font-size:80%;
+    border-right:.1em solid black;
+    overflow:hidden;
+    white-space:nowrap;
+    letter-spacing:.1em;
+    animation:
+        appear 12.5s linear,
+        type 1.5s steps(15, end) 12.3s,
+        blinking-caret .75s step-end 4;
+
+}
+#line5{width:98px}
+@keyframes blinking-caret{
+    0%{border-color:transparent;}
+    50%{border-color:black;}
+    100%{border-color:transparent;}
+}
+@keyframes type{
+    0%{width:0}
+    100%{width:100%}
+}
+@keyframes disolve-caret{
+    0%{border-color:black;}
+    100%{border-color:transparent;}
+}
+@keyframes appear{
+    0%{opacity:0;}
+    99%{opacity:0;}
+    100%{opacity:1;}
+}
+#me-typing{
+    margin-left:200px;
+    margin-top:70px;
+    height:30px;
+    width:40px;
+    /* background:url('stick-figure.png'); 
+    background-size:contain;
+}
+#linkedin{
+    margin-top:10px;
+    height:100px;
+    width:100px;
+    background:green;
+    /* background:url('github-icon.png'); 
+    background-size:contain;
+    border-radius: 50%;
+}
+.house{
+    margin:0;
+    background:white;
+}
+#hall-1{grid-area:31/33/71/67;} 
+
+#elevator-shaft-1{grid-area:3/4/15/12;}
+#elevator-shaft-2{grid-area:17/4/29/12;}
+#elevator-shaft-3{grid-area:31/4/43/12;}
+#elevator-shaft-4{grid-area:45/4/57/12;}
+#elevator-shaft-5{grid-area:59/4/71/12;}
+#elevator-shaft-6{grid-area:73/4/85/12;}
+#elevator-shaft-7{grid-area:87/4/99/12;}
+
+
+
+/* #elevator-shaft-8{grid-area:81/22/92/30;} 
+
+ 
+
+#hall-2{grid-area:17/33/29/67;}
+.frame{
+    background:url('./assets/frame.jpg');
+    background-size:contain;
+}
+#frame-1{grid-area:22/33/29/38;}
+#frame-2{grid-area:22/43/29/48;}
+#frame-3{grid-area:22/52/29/57;}
+#frame-4{grid-area:22/61/29/66;} 
+#framed-pic-1{
+    grid-area:22/34/30/37;
+    background:url('assets/github-icon.png');
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position:center;
+}
+#framed-pic-2{
+    grid-area:22/44/30/47;
+    background:url('assets/linkedin-icon1.png');
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position:center;
+}
+#framed-pic-3{
+    grid-area:22/53/30/56;
+    background:url('assets/trello-icon.png');
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position:center;
+}
+#framed-pic-4{
+    grid-area:23/62/28/65;
+    background:url('assets/washington.jpg');
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:center;
+}
+
+/* 
+#step-1{grid-area:21/70/31/76;}
+#step-2{grid-area:23/76/33/80;}
+#step-3{grid-area:25/80/35/84;}
+#step-4{grid-area:27/84/37/88;}
+#step-5{grid-area:29/88/39/92;}
+#step-6{grid-area:31/92/41/98;}
+
+#step-7{grid-area:45/70/55/76;}
+#step-8{grid-area:47/76/57/80;}
+#step-9{grid-area:49/80/59/84;}
+#step-10{grid-area:51/84/61/88;}
+#step-11{grid-area:53/88/63/92;}
+#step-12{grid-area:55/92/65/98;}  */
+
+/* #step-13{grid-area:69/70/79/76;}
+#step-14{grid-area:71/76/81/80;}
+#step-15{grid-area:73/80/83/84;}
+#step-16{grid-area:75/84/85/88;}
+#step-17{grid-area:77/88/87/92;}
+#step-18{grid-area:79/92/89/98;}  
+
+#hall-3{grid-area:73/33/85/67;}
+/* #garage-1{grid-area:91/70/100/98;} */
+/* #miata{
+    grid-area:93/5/100/38;
+    background:url('assets/miata.jpg');
+    background-repeat:no-repeat;
+    background-size:contain;
+    background-position:right;
+} */
+
+
+
+
+
+/* #balcony{grid-area:13/2/23/10;}
+#rail{grid-area:13/1/19/1;}
+  */
+
+
+
+/* #door-2{
+    grid-area:46/92/55/100;
+    background:url('assets/door.png');
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+#door-3{
+    grid-area:68/92/77/100;
+    background:url('assets/door.png');
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+#door-1{
+    grid-area:24/92/33/100;
+    background:url('assets/door.png');
+    background-repeat:no-repeat;
+    background-size:cover;
+} */
+
+
+
+
+/* #step-14{grid-area:69/90/79/93;}  */
+
+
+
+
+
+
+
+
+
+/* #landing{grid-area:27/93/37/100;} */
+/* #garage-1{grid-area:86/2/100/40;} */
+/* #hall-3{grid-area:69/33/79/67;} */
+
+
+
+
+
+
+
+
+
+
+
+
+/* #mustang{
+    grid-area:88/80/100/100;
+    background:url('assets/mustange.jpg');
+    background-repeat:no-repeat;
+    background-size:contain;
+} */
+/* #miata{
+    grid-area:89/5/100/38;
+    background:url('assets/miata.jpg');
+    background-repeat:no-repeat;
+    background-size:contain;
+    background-position:right;
+} */
+
+
+
+
+
+ 
+
+
+ 
+
+
+
+/* #screen-room{grid-area:70/60/90/99;} */
+/* #projection-screen{
+    grid-area:70/72/89/95;
+    background:url('assets/projection-screen.png');
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position:center;
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 #container{
@@ -459,4 +1079,21 @@
 @keyframes scaleEnter{
     0%{transform:scale(0);}
     100%{transform:scale(1);}
+}#world{
+    margin:0;
+    background:transparent;
+    position:fixed;
+    height:700px;
+    width:700px;
+    display:grid;
+    grid-template: 
+        repeat(100,7px)/
+        repeat(100,7px);
 }
+.house{
+    margin:0;
+    background:white;
+}
+#wall-left{grid-area: 80/1/101/5;}
+#wall-right{grid-area: 80/55/101/57;}
+*/

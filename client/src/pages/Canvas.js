@@ -7,7 +7,6 @@ const Canvas=()=>{
     return(
         <div id='canvas'>
             <Grid/>
-            <House />
         </div>
     )
 }

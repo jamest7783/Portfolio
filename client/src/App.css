@@ -66,7 +66,14 @@
     0%,100%{width:70% ;}
     50%{width:52.5%;}
   }
-  
+  #link-layer{
+    height:600px;
+    width:600px;
+    position:fixed;
+    border-radius: 50%;
+    border:1px solid black;
+    background:transparent;
+  }
 
 
 
@@ -98,7 +105,7 @@
 
 
 
-#story-board{
+/* #story-board{
     position:fixed;
     height:350px;
     width:350px;
@@ -108,7 +115,7 @@
         radial-gradient(70% 30% at center, transparent 65%, white 65.5%);
     display:grid;
     transform: rotateY(0deg) rotate(-15deg);
-}
+} */
 
 
 

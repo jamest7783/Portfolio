@@ -1,14 +1,14 @@
-import Grid from "../components/Grid"
-import GlobeWindow from "../components/GlobeWindow"
-import StoryBoard from "../components/StoryBoard"
+import Grid from '../components/Grid'
+import GlobeWindow from '../components/GlobeWindow'
+import LinkLayer from '../components/LinkLayer'
 
 const Canvas=()=>{
 
     return(
         <div id='canvas'>
             <Grid/>
-            {/* <StoryBoard /> */}
             <GlobeWindow />
+            <LinkLayer />
         </div>
     )
 }

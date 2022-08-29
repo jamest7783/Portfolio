@@ -39,7 +39,7 @@
     height:350px;
     width:350px;
     background: 
-        radial-gradient(circle at center, transparent 65%, white 65.5%);
+        radial-gradient(circle at center, transparent 63%, white 69%);
     display:grid;
     transform: rotateY(0deg) rotate(-12deg);
 }

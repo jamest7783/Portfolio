@@ -30,7 +30,7 @@ const Grid=({grid})=>{
         if(Math.random()<0.01){
             const Unit=styled.div`
                 animation: 
-                    ${spin} 10s linear infinite;
+                    ${spin} 5s linear infinite;
                 
                 grid-row:${row};
                 grid-column:${column};
@@ -45,7 +45,7 @@ const Grid=({grid})=>{
             //units.push(unit)
 
             const Unit=styled.div`
-                animation: ${spin} 10s linear infinite;
+                animation: ${spin} 5s linear infinite;
                 grid-row:${row};
                 grid-column:${column};
             `

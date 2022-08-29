@@ -4,6 +4,9 @@ const StoryBoard=()=>{
 
     return(
         <div id='story-board'>
+
+
+
             {/* <div className='house' id='lair'></div>
             <div className='house' id='garage'></div>
             <div className='house' id='balcony'></div>
@@ -32,7 +35,7 @@ const StoryBoard=()=>{
             <div className='house' id='step-20'></div>
             <div className='house' id='step-21'></div>
 
-            {/* <div className='house' id='library'></div> */}
+            {/* <div className='house' id='library'></div> }
             <div id='miata'></div> 
             <Office />
             <div id='door-1'></div> 
@@ -89,7 +92,7 @@ const StoryBoard=()=>{
             <div className='house' id='garage-1'></div>
             <div className='house' id='garage-2'></div>
             <div id='miata'></div>
-            <div id='mustang'></div>
+            <div id='mustang'></div>*/}
 
         </div>
     )

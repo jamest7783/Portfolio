@@ -36,24 +36,35 @@
 }
 #globe-window{
     position:fixed;
-    height:350px;
-    width:350px;
-    background: 
-        radial-gradient(circle at center, transparent 63%, white 69%);
+    height:430px;
+    width:430px;
+    background:radial-gradient(circle at center, transparent 52%, white 55%); 
     display:grid;
     transform: rotateY(0deg) rotate(-12deg);
+    animation: pulse 10s ease-in-out infinite;  
+    background-position:center;
+}
+@keyframes pulse{
+    0%,100%{background-size:100% ;}
+    50%{background-size:75%;}
 }
 #globe-window::after{
     content: '';
     position: absolute;
+    align-self:center;
     width: 70%;
     height: 50px;
     border-radius: 50%;
-    background: rgba(0,0,0,0.05  );
+    background: rgba(0,0,0,0.045  );
     bottom: -50px;
     z-index: -1;
     filter: blur(10px);
-    transform: rotateY(0deg) rotate(12deg) translatex(15px);
+    transform: rotateY(0deg) rotate(12deg) translatex(40px);
+    animation: pulse_shadow 10s ease-in-out infinite;
+  }
+  @keyframes pulse_shadow{
+    0%,100%{width:70% ;}
+    50%{width:52.5%;}
   }
   
 

@@ -13,34 +13,35 @@ const Grid=({grid})=>{
         100% {transform: rotateY(0deg)}
     `
     let spin
-    for(let i=0;i<1000;i++){
+    for(let i=0;i<2500;i++){
         column++
-        if(column>100){
+        if(column>50){
             row++
             column=1    
         }
-        let prct=100-column
+        let prct=((50-column)/50)*100
         let px=column*7
         spin=keyframes`
             0%{transform:translateX(0%);}
-            ${prct}%{transform:translateX(${700-px}px);}
-            ${prct+0.1}%{transform:translateX(${-(px)}px);}
+            ${prct}%{transform:translateX(${350-px}px);}
+            ${prct+0.01}%{transform:translateX(${-(px)}px);}
             100%{transform:translateX(0px);}
             `
         if(Math.random()<0.01){
             const Unit=styled.div`
-                animation: ${flipOnY} 10s linear infinite;
-                animation-delay:${Math.random()*200}s;
+                animation: 
+                    ${spin} 10s linear infinite;
+                
                 grid-row:${row};
                 grid-column:${column};
             `
             units.push(<Unit className='unit' key={i}>{Math.random()<0.75?0:1}</Unit>)
         }
         else{
-            const unit=(<div className='unit' key={i} style={{ 
-                gridRow:row,
-                gridColumn:column,
-            }}>{Math.random()<0.75?0:1}</div>)
+            // const unit=(<div className='unit' key={i} style={{ 
+            //     gridRow:row,
+            //     gridColumn:column,
+            // }}>{Math.random()<0.75?0:1}</div>)
             //units.push(unit)
 
             const Unit=styled.div`

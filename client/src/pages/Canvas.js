@@ -1,6 +1,6 @@
 import Grid from "../components/Grid"
-import House from '../components/House'
-import StoryBoard from '../components/StoryBoard'
+import GlobeWindow from "../components/GlobeWindow"
+import StoryBoard from "../components/StoryBoard"
 
 const Canvas=()=>{
 
@@ -8,6 +8,7 @@ const Canvas=()=>{
         <div id='canvas'>
             <Grid/>
             {/* <StoryBoard /> */}
+            <GlobeWindow />
         </div>
     )
 }

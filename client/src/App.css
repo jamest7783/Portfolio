@@ -28,7 +28,7 @@
 .unit{
     margin:0;
     padding:0;
-    font-size:40%;
+    font-size:50%;
     display:flex;
     justify-content:center;
     align-items:center;
@@ -38,7 +38,7 @@
     position:fixed;
     height:430px;
     width:430px;
-    background:radial-gradient(circle at center, transparent 52%, white 55%); 
+    background:radial-gradient(circle at center, transparent 52%, white 59%); 
     display:grid;
     transform: rotateY(0deg) rotate(-12deg);
     animation: pulse 10s ease-in-out infinite;  
@@ -61,12 +61,12 @@
     filter: blur(10px);
     transform: rotateY(0deg) rotate(12deg) translatex(40px);
     animation: pulse_shadow 10s ease-in-out infinite;
-  }
-  @keyframes pulse_shadow{
+}
+@keyframes pulse_shadow{
     0%,100%{width:70% ;}
     50%{width:52.5%;}
-  }
-  #link-layer{
+}
+#link-layer{
     height:700px;
     width:700px;
     position:fixed;
@@ -77,70 +77,73 @@
     flex-direction:column;
     align-items: space-around;
     justify-content: space-around;
-  }
-  .link-level{
+}
+.link-level{
     display:flex;
     justify-content:space-between;
-  }
-  button{
+}
+button{
     font-family:'Encode Sans',sans-serif;
     background:transparent;
     display:flex;
     justify-content:center;
     align-items:center;
     border:none;
-  }
-  .icon{
+}
+.icon{
     height:20px;
     width:20px;
-  }
-  #mail-icon{
+}
+#mail-icon{
     margin-left:96px;
     margin-right:10px;
     background:url('assets/mail-icon.jpg');
     background-repeat:no-repeat;
     background-position:center;
     background-size:contain;
-  }
-  #github-icon{
+}
+#github-icon{
     margin-right:10px;
     background:url('assets/github-icon.png');
     background-repeat:no-repeat;
     background-position:center;
     background-size:contain;
-  }
-  #trello-icon{
+}
+#trello-icon{
     margin-left:96px;
     margin-right:10px;
     background:url('assets/trello-icon.png');
     background-repeat:no-repeat;
     background-position:center;
     background-size:contain;
-  }
-  #resume-icon{
+}
+#resume-icon{
     margin-left:10px;
     margin-right:96px;
     background:url('assets/resume-icon.jpg');
     background-repeat:no-repeat;
     background-position:center;
     background-size:contain;
-  }
-  #code-icon{
+}
+#code-icon{
     margin-left:10px;
     margin-right:10px;
     background:url('assets/code-icon.jpg');
     background-repeat:no-repeat;
     background-position:center;
     background-size:contain;
-  }
-  #hammer-icon{
+}
+#hammer-icon{
     margin-left:10px;
     margin-right:96px;
     background:url('assets/hammer-icon.png');
     background-repeat:no-repeat;
     background-position:center;
     background-size:contain;
-  }
+}
+button:hover{
+    font-weight:bold;
+}
 
 
 

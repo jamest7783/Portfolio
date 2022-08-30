@@ -109,10 +109,10 @@ button{
     background-position:center;
     background-size:contain;
 }
-#trello-icon{
+#linkedin-icon{
     margin-left:96px;
     margin-right:10px;
-    background:url('assets/trello-icon.png');
+    background:url('assets/linkedin-icon.png');
     background-repeat:no-repeat;
     background-position:center;
     background-size:contain;
@@ -143,6 +143,15 @@ button{
 }
 button:hover{
     font-weight:bold;
+}
+#hidden-view{
+    position:fixed;
+    align-self:center;
+    height:250px;
+    width:250px;
+    background:blue;
+    border-radius:50%;
+    background:radial-gradient(circle at center, white 55%, transparent 72%);
 }
 
 

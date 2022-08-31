@@ -6,14 +6,21 @@ const LinkLayer=({
     iconColor,
     buttonTextColor,
     outlineColor,
-    setStyleId,
     handleStyle,
-    styles 
+    styles,
+    styleId,
+    setStyleId
 })=>{
 
+    
     const [skills,revealSkills]=useState(false)
     const [contact,revealContact]=useState(false)
     const link=(path)=>{window.open(path,'_blank')}
+
+    let setStyle=(num)=>{
+        setStyleId(num)
+        handleStyle(styleId,styles)
+    }
 
     return(
         <div id='link-layer' style={{
@@ -25,8 +32,9 @@ const LinkLayer=({
                 <button className='moon' id='_0' style={{
                     background:buttonColor, 
                     color:buttonTextColor
-                }} onClick={(e)=>{
-                        handleStyle(1,styles)
+                }} 
+                onClick={(e)=>{
+                        //setStyle(1)
                         if(!contact){
                             revealContact(true)
                             revealSkills(false)
@@ -42,7 +50,13 @@ const LinkLayer=({
                 <button className='moon' id='_1' style={{
                     background:buttonColor,
                     color:buttonTextColor
-                    }} onClick={(e)=>{link('https://docs.google.com/document/d/1jYzRgLNj8IO4ZzwQ2WoLnseSsjhxjxDhzHmBwpee2Mc/edit?usp=sharing')}}>
+                    
+                    }} 
+                    onClick={(e)=>{
+                        // link('https://docs.google.com/document/d/1jYzRgLNj8IO4ZzwQ2WoLnseSsjhxjxDhzHmBwpee2Mc/edit?usp=sharing')
+                        //setStyle(0)
+                        setStyleId(1)
+                        }}>
                     <div className='icon' id='resume-icon'></div>
                     resume
                 </button>
@@ -90,7 +104,7 @@ const LinkLayer=({
                     projects
                 </button>
  
-            {(skills||contact) && 
+            {/* {(skills||contact) && 
                 <div id='hidden-view'>
                     {skills && 
                         <div id='skills-list'>
@@ -114,7 +128,7 @@ const LinkLayer=({
                             jamestjewitt@gmail.com
                         </div>}
                 </div>
-            }
+            } */}
         </div>
     )
 }

@@ -10,11 +10,10 @@ const App=()=>{
   const [ buttonTextColor, setButtonTextColor ]    = useState('black')
   const [ buttonColor, setButtonColor ]            = useState('transparent')
   const [ linkLayerColor, setLinkLayerColor]       = useState('transparent')
-  const [ globeTextColor, setGlobeTextColor]       = useState('black')
-  const [ gridColor, setGridColor]                 = useState('radial-gradient(black,white)')
   const [ iconColor, setIconColor ]                = useState('transparent')
 
   const [styleId,setStyleId]=useState(0)
+
 
   const style_0={
     background_color:'transparent',
@@ -39,7 +38,7 @@ const App=()=>{
   let styles=[style_0,style_1]
 
   let handleStyle=(id,styles)=>{
-    const set=[setBackgroundColor,setOutlineColor,setButtonTextColor,setButtonColor,setLinkLayerColor,setGlobeTextColor,setGridColor,setIconColor]
+    const set=[setBackgroundColor,setOutlineColor,setButtonTextColor,setButtonColor,setLinkLayerColor,setIconColor]
     console.log('called')
     for(let i=0; i<Object.keys(styles[id]).length ;i++){
       console.log(i)
@@ -73,11 +72,11 @@ const App=()=>{
             buttonColor={buttonColor}
             iconColor={iconColor}
             linkLayerColor={linkLayerColor}
-            globeTextColor={globeTextColor}
-            gridColor={gridColor}
-            setStyleId={setStyleId}
+
             handleStyle={handleStyle}
             styles={styles}
+            styleId={styleId}
+            setStyleId={setStyleId}
 
             />}/>
         </Routes>

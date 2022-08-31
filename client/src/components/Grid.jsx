@@ -1,6 +1,16 @@
 import styled,{keyframes} from 'styled-components'
+import { useEffect } from 'react'
+import { useState } from 'react'
  
-const Grid=({gridColor,globeTextColor})=>{
+const Grid=({styleId,styles})=>{
+
+    const [ globeTextColor, setGlobeTextColor] = useState('black')
+    const [ gridColor, setGridColor]           = useState('radial-gradient(black,white)')
+
+    useEffect(()=>{
+        setGlobeTextColor(styles[styleId].globe_text_color)
+        setGridColor(styles[styleId].grid_color)
+    },[styleId])
 
     let units=[]
     let row=1
@@ -61,9 +71,9 @@ const Grid=({gridColor,globeTextColor})=>{
     return(
         <div> 
             <div id='grid' style={{ 
-                // background:gridColor,
+                background:gridColor,
             }}>
-                {units}
+                {/* {units} */}
             </div> 
         </div>
     )

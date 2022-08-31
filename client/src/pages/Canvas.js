@@ -1,6 +1,7 @@
 import Grid from '../components/Grid'
 import GlobeWindow from '../components/GlobeWindow'
 import LinkLayer from '../components/LinkLayer'
+import styled from 'styled-components'
 
 const Canvas=({
         backgroundColor,
@@ -9,11 +10,11 @@ const Canvas=({
         buttonColor,
         iconColor,
         linkLayerColor,
-        globeTextColor,
-        gridColor,
-        setStyleId,
+
         handleStyle,
-        styles
+        styles,
+        styleId,
+        setStyleId
     })=>{
 
     return(
@@ -21,8 +22,8 @@ const Canvas=({
             backgroundColor:`${backgroundColor}`
             }}>
             <Grid 
-                gridColor={gridColor} 
-                globeTextColor={globeTextColor}
+                styleId={styleId}
+                styles={styles}
             />
             <GlobeWindow />
             <LinkLayer 
@@ -34,6 +35,7 @@ const Canvas=({
                 setStyleId={setStyleId}
                 handleStyle={handleStyle}
                 styles={styles}
+                styleId={styleId}
             />
         </div>
     )

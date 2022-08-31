@@ -1,16 +1,20 @@
 import { useState } from "react"
 
-const LinkLayer=()=>{
+const LinkLayer=({styles,styleIndex,setStyleIndex})=>{
 
     const link=(path)=>{window.open(path,'_blank')}
+    const styleize=(num)=>{
+        console.log('here')
+        setStyleIndex(num)
+    }
 
     return(
         <div id='link-layer'>
-            <button className='moon' id='_0'>
+            <button className='moon' id='_0' onClick={(e)=>{styleize(1)}}>
                 <div className='icon' id='mail-icon'></div>
                 contact
             </button>
-            <button className='moon' id='_1'>
+            <button className='moon' id='_1' onClick={(e)=>{styleize(2)}}>
                 <div className='icon' id='resume-icon'></div>
                 resume
             </button>

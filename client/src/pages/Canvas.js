@@ -2,13 +2,16 @@ import Grid from '../components/Grid'
 import GlobeWindow from '../components/GlobeWindow'
 import LinkLayer from '../components/LinkLayer'
 
-const Canvas=()=>{
-
+const Canvas=({styles,styleIndex,setStyleIndex})=>{
     return(
         <div id='canvas'>
-            <Grid/>
+            <Grid styleIndex={styleIndex}/>
             <GlobeWindow/>
-            <LinkLayer/>
+            <LinkLayer
+                styles={styles}
+                styleIndex={styleIndex} 
+                setStyleIndex={setStyleIndex}
+            />
         </div>
     )
 }

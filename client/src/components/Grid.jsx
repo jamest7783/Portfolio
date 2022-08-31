@@ -13,14 +13,14 @@ const Grid=({gridColor,globeTextColor})=>{
         100% {transform: rotateY(0deg)}
     `
     let spin
-    for(let i=0;i<2500;i++){
+    for(let i=0;i<625;i++){
         column++
-        if(column>50){
+        if(column>25){
             row++
             column=1    
         }
-        let prct=((50-column)/50)*100
-        let px=column*7
+        let prct=((25-column)/25)*100
+        let px=column*14
         spin=keyframes`
             0%{transform:translateX(0%);}
             ${prct}%{transform:translateX(${350-px}px);}

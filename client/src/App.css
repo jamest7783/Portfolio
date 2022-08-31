@@ -18,8 +18,8 @@
     height:350px;
     display:grid;
     grid-template:
-        repeat(50,minmax(7px,7px))/
-        repeat(50,minmax(7px,7px));
+        repeat(25,minmax(14px,14px))/
+        repeat(25,minmax(14px,14px));
     /* background: radial-gradient(black,white); */
     background-clip: text;
     color: transparent;

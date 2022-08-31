@@ -4,7 +4,7 @@
     margin:0;
 }
 #canvas{
-    background:blue;
+    background:transparent;
     margin:0;
     height:100vh;
     width:100vw;
@@ -14,13 +14,13 @@
 }
 #grid{
     margin:0;
-    width:350px;
-    height:350px;
+    width:360px;
+    height:360px;
     display:grid;
     grid-template:
-        repeat(25,minmax(14px,14px))/
-        repeat(25,minmax(14px,14px));
-    /* background: radial-gradient(black,white); */
+        repeat(40,minmax(9px,9px))/
+        repeat(40,minmax(9px,9px));
+    background: radial-gradient(black,white);
     background-clip: text;
     color: transparent;
     transform: rotateY(0deg) rotate(-12deg);
@@ -28,7 +28,7 @@
 .unit{
     margin:0;
     padding:0;
-    font-size:100%;
+    font-size:60%;
     display:flex;
     justify-content:center;
     align-items:center;
@@ -38,7 +38,7 @@
     position:fixed;
     height:430px;
     width:430px;
-    background:radial-gradient(circle at center, transparent 55%, white 59%); 
+    background:radial-gradient(circle at center, transparent 53%, white 59%); 
     display:grid;
     transform: rotateY(0deg) rotate(-12deg);
     animation: pulse 10s ease-in-out infinite;  
@@ -139,27 +139,19 @@ button:hover{
 }
 .moon{
     position:fixed;
-    animation: orbit 60s linear infinite;
+    animation: orbit 240s linear infinite;
 }
-#_0{animation-delay: -10s;}
-#_1{animation-delay: -20s;}
-#_2{animation-delay: -30s;}
-#_3{animation-delay: -40s;}
-#_4{animation-delay: -50s;}
-#_5{animation-delay: -60s;}
+#_0{animation-delay: -40s;}
+#_1{animation-delay: -80s;}
+#_2{animation-delay: -120s;}
+#_3{animation-delay: -160s;}
+#_4{animation-delay: -200s;}
+#_5{animation-delay: -240s;}
 
 @keyframes orbit{
     0%{transform:rotate(0deg) translateX(260px) rotate(0deg);}
     100%{transform:rotate(360deg) translateX(260px) rotate(-360deg);}
 }
-
-
-
-
-
-
-
-
 #hidden-view{
     font-family:'Encode Sans',sans-serif;
     position:fixed;
@@ -172,9 +164,9 @@ button:hover{
     justify-content:center;
     align-items:center;
 }
-#skills-list{
+/* #skills-list{
 
-}
+} */
 
 
 

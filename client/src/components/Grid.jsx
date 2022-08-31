@@ -2,15 +2,7 @@ import styled,{keyframes} from 'styled-components'
 import { useEffect } from 'react'
 import { useState } from 'react'
  
-const Grid=({styleId,styles})=>{
-
-    const [ globeTextColor, setGlobeTextColor] = useState('black')
-    const [ gridColor, setGridColor]           = useState('radial-gradient(black,white)')
-
-    useEffect(()=>{
-        setGlobeTextColor(styles[styleId].globe_text_color)
-        setGridColor(styles[styleId].grid_color)
-    },[styleId])
+const Grid=()=>{
 
     let units=[]
     let row=1
@@ -23,61 +15,34 @@ const Grid=({styleId,styles})=>{
         100% {transform: rotateY(0deg)}
     `
     let spin
-    for(let i=0;i<625;i++){
+    for(let i=0;i<1600;i++){
         column++
-        if(column>25){
+        if(column>40){
             row++
             column=1    
         }
-        let prct=((25-column)/25)*100
-        let px=column*14
+        let prct=((40-column)/40)*100
+        let px=column*9
         spin=keyframes`
             0%{transform:translateX(0%);}
-            ${prct}%{transform:translateX(${350-px}px);}
+            ${prct}%{transform:translateX(${360-px}px);}
             ${prct+0.01}%{transform:translateX(${-(px)}px);}
             100%{transform:translateX(0px);}
             `
-        // if(Math.random()<0.01){
-        //     const Unit=styled.div`
-        //         animation: 
-        //             ${spin} 5s linear infinite;
-                
-        //         grid-row:${row};
-        //         grid-column:${column};
-        //     `
-        //     units.push(<Unit className='unit' key={i}>{Math.random()<0.75?0:1}</Unit>)
-        // }
-        // else{
-            // const unit=(<div className='unit' key={i} style={{ 
-            //     gridRow:row,
-            //     gridColumn:column,
-            // }}>{Math.random()<0.75?0:1}</div>)
-            //units.push(unit)
-
-            const Unit=styled.div`
-                animation: ${spin} 5s linear infinite;
-                grid-row:${row};
-                grid-column:${column};
-            `
-            units.push(
-                <Unit className='unit' 
-                    key={i}
-                    style={{color:globeTextColor}}
-                >{Math.random()<0.75?0:1}</Unit>
-            )
-        // }
+        let txt = Math.random()>0.03 ? Math.random()<0.75?0:1 : ''
+        const Unit=styled.div`
+            animation: ${spin} 5s linear infinite;
+            grid-row:${row};
+            grid-column:${column};
+        `
+        units.push(<Unit className='unit' key={i}>{txt}</Unit>)
     }
-
     return(
         <div> 
-            <div id='grid' style={{ 
-                background:gridColor,
-            }}>
-                { styleId===0 && units }
+            <div id='grid'>
+                { units }
             </div> 
         </div>
     )
-
 }
-
 export default Grid

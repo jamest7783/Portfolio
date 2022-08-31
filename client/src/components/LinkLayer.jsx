@@ -1,16 +1,32 @@
 import { useState } from "react"
 
-const LinkLayer=({linkLayerColor,buttonColor})=>{
+const LinkLayer=({
+    linkLayerColor,
+    buttonColor,
+    iconColor,
+    buttonTextColor,
+    outlineColor,
+    setStyleId,
+    handleStyle,
+    styles 
+})=>{
 
     const [skills,revealSkills]=useState(false)
     const [contact,revealContact]=useState(false)
     const link=(path)=>{window.open(path,'_blank')}
 
     return(
-        <div id='link-layer' style={{background:linkLayerColor}}>
+        <div id='link-layer' style={{
+            background:linkLayerColor,
+            outline:outlineColor
+            }}>
 
 
-                <button className='moon' id='_0' style={{ background:buttonColor }}onClick={(e)=>{
+                <button className='moon' id='_0' style={{
+                    background:buttonColor, 
+                    color:buttonTextColor
+                }} onClick={(e)=>{
+                        handleStyle(1,styles)
                         if(!contact){
                             revealContact(true)
                             revealSkills(false)
@@ -23,19 +39,28 @@ const LinkLayer=({linkLayerColor,buttonColor})=>{
                 </button>
 
 
-                <button className='moon' id='_1' onClick={(e)=>{link('https://docs.google.com/document/d/1jYzRgLNj8IO4ZzwQ2WoLnseSsjhxjxDhzHmBwpee2Mc/edit?usp=sharing')}}>
+                <button className='moon' id='_1' style={{
+                    background:buttonColor,
+                    color:buttonTextColor
+                    }} onClick={(e)=>{link('https://docs.google.com/document/d/1jYzRgLNj8IO4ZzwQ2WoLnseSsjhxjxDhzHmBwpee2Mc/edit?usp=sharing')}}>
                     <div className='icon' id='resume-icon'></div>
                     resume
                 </button>
 
 
-                <button className='moon' id='_2' onClick={(e)=>{link('https://github.com/jamest7783')}}>
+                <button className='moon' id='_2' style={{
+                    background:buttonColor,
+                    color:buttonTextColor
+                    }} onClick={(e)=>{link('https://github.com/jamest7783')}}>
                     <div className='icon' id='github-icon'></div>
                     github
                 </button>
 
 
-                <button className='moon' id='_3' onClick={(e)=>{
+                <button className='moon' id='_3' style={{
+                    background:buttonColor,
+                    color:buttonTextColor
+                }} onClick={(e)=>{
                         if(!skills){
                             revealSkills(true)
                             revealContact(false)
@@ -48,13 +73,19 @@ const LinkLayer=({linkLayerColor,buttonColor})=>{
                 </button>
 
 
-                <button className='moon' id='_4' onClick={(e)=>{link('https://www.linkedin.com/in/james-jewitt/')}}>
+                <button className='moon' id='_4' style={{
+                    background:buttonColor,
+                    color:buttonTextColor
+                    }} onClick={(e)=>{link('https://www.linkedin.com/in/james-jewitt/')}}>
                     <div className='icon' id='linkedin-icon'></div>
                     linkedin
                 </button>
 
 
-                <button className='moon' id='_5' onClick={(e)=>{link('https://google.com')}}>
+                <button className='moon' id='_5' style={{
+                    background:buttonColor,
+                    color:buttonTextColor
+                    }} onClick={(e)=>{link('https://google.com')}}>
                 <div className='icon' id='hammer-icon'></div>
                     projects
                 </button>

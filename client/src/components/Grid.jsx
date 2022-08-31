@@ -1,6 +1,6 @@
 import styled,{keyframes} from 'styled-components'
  
-const Grid=({backgroundColor,globeTextColor})=>{
+const Grid=({gridColor,globeTextColor})=>{
 
     let units=[]
     let row=1
@@ -27,17 +27,17 @@ const Grid=({backgroundColor,globeTextColor})=>{
             ${prct+0.01}%{transform:translateX(${-(px)}px);}
             100%{transform:translateX(0px);}
             `
-        if(Math.random()<0.01){
-            const Unit=styled.div`
-                animation: 
-                    ${spin} 5s linear infinite;
+        // if(Math.random()<0.01){
+        //     const Unit=styled.div`
+        //         animation: 
+        //             ${spin} 5s linear infinite;
                 
-                grid-row:${row};
-                grid-column:${column};
-            `
-            units.push(<Unit className='unit' key={i}>{Math.random()<0.75?0:1}</Unit>)
-        }
-        else{
+        //         grid-row:${row};
+        //         grid-column:${column};
+        //     `
+        //     units.push(<Unit className='unit' key={i}>{Math.random()<0.75?0:1}</Unit>)
+        // }
+        // else{
             // const unit=(<div className='unit' key={i} style={{ 
             //     gridRow:row,
             //     gridColumn:column,
@@ -55,12 +55,14 @@ const Grid=({backgroundColor,globeTextColor})=>{
                     style={{color:globeTextColor}}
                 >{Math.random()<0.75?0:1}</Unit>
             )
-        }
+        // }
     }
 
     return(
         <div> 
-            <div id='grid' style={{ backgroundColor:backgroundColor }}>
+            <div id='grid' style={{ 
+                // background:gridColor,
+            }}>
                 {units}
             </div> 
         </div>

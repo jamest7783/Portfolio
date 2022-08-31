@@ -10,18 +10,30 @@ const Canvas=({
         iconColor,
         linkLayerColor,
         globeTextColor,
-        gridColor
+        gridColor,
+        setStyleId,
+        handleStyle,
+        styles
     })=>{
 
     return(
-        <div id='canvas' style={{backgroundColor:`${backgroundColor}`}}>
+        <div id='canvas' style={{
+            backgroundColor:`${backgroundColor}`
+            }}>
             <Grid 
-                gridColor={gridColor} globeTextColor={globeTextColor}
+                gridColor={gridColor} 
+                globeTextColor={globeTextColor}
             />
             <GlobeWindow />
             <LinkLayer 
                 linkLayerColor={linkLayerColor}
                 buttonColor={buttonColor}
+                iconColor={iconColor}
+                buttonTextColor={buttonTextColor}
+                outlineColor={outlineColor}
+                setStyleId={setStyleId}
+                handleStyle={handleStyle}
+                styles={styles}
             />
         </div>
     )

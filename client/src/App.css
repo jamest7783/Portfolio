@@ -4,6 +4,7 @@
     margin:0;
 }
 #canvas{
+    background:blue;
     margin:0;
     height:100vh;
     width:100vw;
@@ -17,9 +18,9 @@
     height:350px;
     display:grid;
     grid-template:
-        repeat(100,minmax(7px,7px))/
-        repeat(100,minmax(7px,7px));
-    background: radial-gradient(black,white);
+        repeat(50,minmax(7px,7px))/
+        repeat(50,minmax(7px,7px));
+    /* background: radial-gradient(black,white); */
     background-clip: text;
     color: transparent;
     transform: rotateY(0deg) rotate(-12deg);
@@ -37,7 +38,7 @@
     position:fixed;
     height:430px;
     width:430px;
-    background:radial-gradient(circle at center, transparent 55%, white 60%); 
+    background:radial-gradient(circle at center, transparent 55%, white 59%); 
     display:grid;
     transform: rotateY(0deg) rotate(-12deg);
     animation: pulse 10s ease-in-out infinite;  
@@ -70,6 +71,7 @@
     width:700px;
     position:fixed;
     border-radius: 50%;
+    background:transparent;
     outline: 5px solid black;
     outline-offset: -20px;
     display:flex;
@@ -85,6 +87,7 @@ button{
     width:100px;
     font-family:'Encode Sans',sans-serif;
     font-size: medium;
+    background:transparent;
     display:flex;
     justify-content:center;
     align-items:center;

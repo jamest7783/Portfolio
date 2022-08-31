@@ -1,6 +1,6 @@
 import styled,{keyframes} from 'styled-components'
  
-const Grid=({grid})=>{
+const Grid=({backgroundColor,globeTextColor})=>{
 
     let units=[]
     let row=1
@@ -49,15 +49,20 @@ const Grid=({grid})=>{
                 grid-row:${row};
                 grid-column:${column};
             `
-            units.push(<Unit className='unit' key={i}>{Math.random()<0.75?0:1}</Unit>)
+            units.push(
+                <Unit className='unit' 
+                    key={i}
+                    style={{color:globeTextColor}}
+                >{Math.random()<0.75?0:1}</Unit>
+            )
         }
     }
 
     return(
         <div> 
-            <div id='grid'>
+            <div id='grid' style={{ backgroundColor:backgroundColor }}>
                 {units}
-            </div>
+            </div> 
         </div>
     )
 

@@ -1,42 +1,89 @@
-import {useNavigate} from "react-router-dom"
+import { useState } from "react"
 
-const LinkLayer=()=>{
+const LinkLayer=({linkLayerColor,buttonColor})=>{
 
+    const [skills,revealSkills]=useState(false)
+    const [contact,revealContact]=useState(false)
     const link=(path)=>{window.open(path,'_blank')}
-    
+
     return(
-        <div id='link-layer'>
-            <div className='link-level'>
-                <button onClick={(e)=>{link('https://google.com')}}>
+        <div id='link-layer' style={{background:linkLayerColor}}>
+
+
+                <button className='moon' id='_0' style={{ background:buttonColor }}onClick={(e)=>{
+                        if(!contact){
+                            revealContact(true)
+                            revealSkills(false)
+                        }else{
+                            revealContact(false)
+                        }
+                    }}>
                     <div className='icon' id='mail-icon'></div>
                     contact
                 </button>
-                <button onClick={(e)=>{link('https://docs.google.com/document/d/1jYzRgLNj8IO4ZzwQ2WoLnseSsjhxjxDhzHmBwpee2Mc/edit?usp=sharing')}}>
-                    resume
+
+
+                <button className='moon' id='_1' onClick={(e)=>{link('https://docs.google.com/document/d/1jYzRgLNj8IO4ZzwQ2WoLnseSsjhxjxDhzHmBwpee2Mc/edit?usp=sharing')}}>
                     <div className='icon' id='resume-icon'></div>
+                    resume
                 </button>
-            </div>
-            <div className='link-level'>
-                <button onClick={(e)=>{link('https://github.com/jamest7783')}}>
+
+
+                <button className='moon' id='_2' onClick={(e)=>{link('https://github.com/jamest7783')}}>
                     <div className='icon' id='github-icon'></div>
-                    gitHub
+                    github
                 </button>
-                <button onClick={(e)=>{link('https://google.com')}}>
-                    skills
+
+
+                <button className='moon' id='_3' onClick={(e)=>{
+                        if(!skills){
+                            revealSkills(true)
+                            revealContact(false)
+                        }else{
+                            revealSkills(false)
+                        }
+                    }}>
                     <div className='icon' id='code-icon'></div>
+                    skills
                 </button>
-            </div>
-            <div className='link-level'>
-                <button onClick={(e)=>{link('https://www.linkedin.com/in/james-jewitt/')}}>
+
+
+                <button className='moon' id='_4' onClick={(e)=>{link('https://www.linkedin.com/in/james-jewitt/')}}>
                     <div className='icon' id='linkedin-icon'></div>
                     linkedin
                 </button>
-                <button onClick={(e)=>{link('https://google.com')}}>
+
+
+                <button className='moon' id='_5' onClick={(e)=>{link('https://google.com')}}>
+                <div className='icon' id='hammer-icon'></div>
                     projects
-                    <div className='icon' id='hammer-icon'></div>
                 </button>
-            </div>
-            <div id='hidden-view'></div>
+ 
+            {(skills||contact) && 
+                <div id='hidden-view'>
+                    {skills && 
+                        <div id='skills-list'>
+                            <ul>
+                                Languages
+                                <li>Pythons</li>
+                            </ul>
+                            Python 
+                            JavaScript
+                            HTML
+                            CSS 
+                            React
+                            Vue
+                            MongoDB
+                            SQL 
+                            Django
+                        </div>}
+                    {contact && 
+                        <div id='contact'>
+                            contact me at
+                            jamestjewitt@gmail.com
+                        </div>}
+                </div>
+            }
         </div>
     )
 }

@@ -73,7 +73,7 @@ const Grid=({styleId,styles})=>{
             <div id='grid' style={{ 
                 background:gridColor,
             }}>
-                {/* {units} */}
+                { styleId===0 && units }
             </div> 
         </div>
     )

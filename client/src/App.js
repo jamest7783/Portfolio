@@ -35,11 +35,21 @@ const App=()=>{
     grid_color:'black',
     icon_color:'blue' 
   }
-  let styles=[style_0,style_1]
+  const style_2={
+    background_color:'anitique white',
+    outline_color:'10px solid red',
+    button_text_color:'white',
+    button_color:'blue',
+    link_layer_color:'transparent',
+    globe_text_color:'green',
+    grid_color:'yellow',
+    icon_color:'blue' 
+  }
+  let styles=[style_0,style_1,style_2]
 
   let handleStyle=(id,styles)=>{
     const set=[setBackgroundColor,setOutlineColor,setButtonTextColor,setButtonColor,setLinkLayerColor,setIconColor]
-    console.log('called')
+    console.log('called style',id)
     for(let i=0; i<Object.keys(styles[id]).length ;i++){
       console.log(i)
       set[i](Object.values(styles[id])[i])

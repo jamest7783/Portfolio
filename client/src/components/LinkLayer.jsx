@@ -34,7 +34,7 @@ const LinkLayer=({
                     color:buttonTextColor
                 }} 
                 onClick={(e)=>{
-                        //setStyle(1)
+                        setStyle(0)
                         if(!contact){
                             revealContact(true)
                             revealSkills(false)
@@ -65,7 +65,11 @@ const LinkLayer=({
                 <button className='moon' id='_2' style={{
                     background:buttonColor,
                     color:buttonTextColor
-                    }} onClick={(e)=>{link('https://github.com/jamest7783')}}>
+                    }} 
+                    onClick={(e)=>{
+                    setStyleId(2)
+                    // link('https://github.com/jamest7783')
+                    }}>
                     <div className='icon' id='github-icon'></div>
                     github
                 </button>

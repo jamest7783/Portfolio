@@ -1,6 +1,7 @@
 import Grid from '../components/Grid'
 import GlobeWindow from '../components/GlobeWindow'
 import LinkLayer from '../components/LinkLayer'
+import Planet from '../components/Planet'
 
 const Canvas=({styles,styleIndex,setStyleIndex})=>{
     return(
@@ -8,10 +9,10 @@ const Canvas=({styles,styleIndex,setStyleIndex})=>{
             <Grid styleIndex={styleIndex}/>
             <GlobeWindow/>
             <LinkLayer
-                styles={styles}
                 styleIndex={styleIndex} 
                 setStyleIndex={setStyleIndex}
             />
+            {/* <Planet styleIndex={styleIndex}/> */}
         </div>
     )
 }

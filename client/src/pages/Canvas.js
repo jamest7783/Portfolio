@@ -1,7 +1,7 @@
 import Grid from '../components/Grid'
 import GlobeWindow from '../components/GlobeWindow'
 import LinkLayer from '../components/LinkLayer'
-import Planet from '../components/Planet'
+import Sphere from '../components/Sphere'
 
 const Canvas=({styles,styleIndex,setStyleIndex})=>{
     return(
@@ -12,7 +12,7 @@ const Canvas=({styles,styleIndex,setStyleIndex})=>{
                 styleIndex={styleIndex} 
                 setStyleIndex={setStyleIndex}
             />
-            {/* <Planet styleIndex={styleIndex}/> */}
+            {styleIndex!=0 && <Sphere styleIndex={styleIndex}/>}
         </div>
     )
 }

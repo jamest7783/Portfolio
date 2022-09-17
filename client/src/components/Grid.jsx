@@ -40,7 +40,7 @@ const Grid=({styleIndex})=>{
     return(
         <div> 
             <div id='grid'>
-                { styleIndex===0 && units }
+                {styleIndex===0 && units}
             </div> 
         </div>
     )

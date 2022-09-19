@@ -9,7 +9,8 @@ const style_1={
     globe_text_color:'black',
     grid_color:'radial-gradient(black,white)',
     icon_color:'transparent',
-    planet:'black'
+    planet:'black',
+    font:''
 }
 const style_2={
     sphere_border_color:'orange',

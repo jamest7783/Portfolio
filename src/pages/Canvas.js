@@ -8,6 +8,7 @@ import Projects from '../components/Projects'
 const Canvas=({styles,styleIndex,setStyleIndex})=>{
 
     const [class_,setClass]=useState('grid')
+    const [viewProjects,setViewProjects]=useState(false)
 
     return(
         <div id='canvas'>
@@ -16,9 +17,11 @@ const Canvas=({styles,styleIndex,setStyleIndex})=>{
             <LinkLayer
                 class_={class_}
                 setClass={setClass}
+                viewProjects={viewProjects}
+                setViewProjects={setViewProjects}
             />
-            {(class_!='grid' && class_!='purple') && <Sphere class_={class_}/>}
-            {class_==='purple' && <Projects/>}
+            {(class_!='grid' && !viewProjects) && <Sphere class_={class_}/>}
+            {(class_==='purple' && viewProjects) && <Projects setViewProjects={setViewProjects}/>}
         </div>
     )
 }

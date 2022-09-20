@@ -76,9 +76,10 @@
     align-items: center;
     justify-content: center;
 }
-.link-level{
+#link-layer-buttons{
     display:flex;
-    justify-content:space-between;
+    align-items: center;
+    justify-content: center;
 }
 @font-face{
     font-family: 'Code';
@@ -335,22 +336,125 @@ button:active{
 }
 #projects{
     position:fixed;
-    height:500px;
-    width:500px;
+    height:700px;
+    width:700px;
     border-radius:50%;
     display:flex;
     justify-content:center;
     align-items:center;
 }
 #project-view{
-    height:80%;
-    width:80%;
-    margin:0px 20px 0px 20px;
+    height:100%;
+    width:100%;
     border-radius:50%;
-    border:1px solid black;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+#exit-projects{
     display:flex;
     justify-content:center;
     align-items:center;
+    position:absolute;
+    top:10px;
+    left:570px;
+    font-family:'Zector';
+    font-size:large;
+    color:purple;
+    height:35px;
+    width:150px;
+    animation:none;
+}
+#exit-projects:hover{
+    background:purple;
+    color:white;
+    border-radius: 5px;
+    cursor:pointer;
+}
+#exit-projects:active{
+    cursor:grabbing;
+}
+#projects-go-left{
+    height:50px;
+    width:50px;
+    font-family:'Zector';
+    cursor:grabbing;
+    position:absolute;
+    top:middle;
+    left:-10%;
+    animation:none;
+    background:url('./assets/arrow-left.png');
+    background-size:contain;
+    background-repeat:no-repeat;
+}
+#projects-go-right{
+    height:50px;
+    width:50px;
+    font-family:'Zector';
+    cursor:grabbing;
+    position:absolute;
+    top:middle;
+    right:-10%;
+    animation:none;
+    background:url('./assets/arrow-right.png');
+    background-size:contain;
+    background-repeat:no-repeat;
+}
+#projects-go-right:hover,#projects-go-left:hover,
+#projects-go-down:hover,#projects-go-up:hover{
+    border:1px solid black;
+}
+#projects-go-up{
+    height:50px;
+    width:50px;
+    font-family:'Zector';
+    cursor:grabbing;
+    position:absolute;
+    top:-10%;
+    right:middle;
+    animation:none;
+    background:url('./assets/arrow-up.png');
+    background-size:contain;
+    background-repeat:no-repeat;
+}
+#projects-go-down{
+    height:50px;
+    width:50px;
+    font-family:'Zector';
+    cursor:grabbing;
+    position:absolute;
+    bottom:-10%;
+    right:middle;
+    animation:none;
+    background:url('./assets/arrow-down.png');
+    background-size:contain;
+    background-repeat:no-repeat;
+}
+#quickChart{
+    font-family:'arial';
+    font-size:45px;
+    font-weight:bold;
+}
+#Dividend{
+    content: '';
+    height:100px;
+    width:200px;
+    background:url('./assets/Dividend\ Logo.png');
+    background-size:contain;
+    background-repeat:no-repeat;
+    font-size:45px;
+    font-weight:bold;
+}
+#quickChart{
+    font-family:'arial';
+    font-size:45px;
+    font-weight:bold;
+}
+#AlienInvasion{
+    font-family:'arial';
+    font-size:45px;
+    font-weight:bold;
 }
 
 

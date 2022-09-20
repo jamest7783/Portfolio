@@ -4,7 +4,7 @@ import { useState } from 'react'
  
 const Grid=({styleIndex})=>{
 
-    let units=[ ]
+    let units=[]
     let row=1
     let column=0
     const flipOnY=keyframes`

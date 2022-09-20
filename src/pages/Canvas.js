@@ -2,6 +2,7 @@ import Grid from '../components/Grid'
 import GlobeWindow from '../components/GlobeWindow'
 import LinkLayer from '../components/LinkLayer'
 import Sphere from '../components/Sphere'
+import Projects from '../components/Projects'
 
 const Canvas=({styles,styleIndex,setStyleIndex})=>{
     return(
@@ -12,7 +13,8 @@ const Canvas=({styles,styleIndex,setStyleIndex})=>{
                 styleIndex={styleIndex} 
                 setStyleIndex={setStyleIndex}
             />
-            {styleIndex!=0 && <Sphere styleIndex={styleIndex}/>}
+            {(styleIndex!=0)  && <Sphere styleIndex={styleIndex}/>}
+            {/* {styleIndex==2 && <Projects/>} */}
         </div>
     )
 }

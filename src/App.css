@@ -138,10 +138,7 @@ button:active{
 button:hover{
     font-weight:bold;
 }
-.moon{
-    position:fixed;
-    animation: orbit 250s linear infinite;
-}
+
 #_0{animation-delay: -50s;}
 #_1{animation-delay: -100s;}
 #_2{animation-delay: -150s;}
@@ -212,6 +209,90 @@ button:hover{
 .two{transform:rotateY(45deg);}
 .three{transform:rotateY(90deg);}
 .four{transform:rotateY(135deg);}
+button{
+    height:35px;
+    width:100px;
+
+    font-size: xx-large;
+    background:transparent;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border:none;
+    cursor:pointer;
+    position:fixed;
+    animation: orbit 250s linear infinite;
+}
+button:active{
+    cursor:grabbing;
+}
+@font-face{
+    font-family: 'neon';
+    src: url('assets/neon.ttf') format('truetype');
+}
+@font-face{
+    font-family: 'Zector';
+    src: url('assets/Zector.ttf') format('truetype');
+}
+@font-face{
+    font-family: 'RoyalAcid';
+    src: url('assets/Royalacid_o.ttf') format('truetype');
+}
+@font-face{
+    font-family: 'Prisma';
+    src: url('assets/Prisma.ttf') format('truetype');
+}
+@font-face{
+    font-family: 'CorruptedFile';
+    src: url('assets/Corrupted\ File.ttf') format('truetype');
+}
+@font-face{
+    font-family: 'AllRightsReserved';
+    src: url('assets/All\ rights\ reserved.ttf') format('truetype');
+}
+.red{
+    color:red;
+    font-family:'neon',sans-serif;
+}
+.blue{
+    color:blue;
+    font-family:'Zector',sans-serif;
+}
+.orange{
+    color:orange;
+    font-family:'Seize',sans-serif;
+}
+.green{
+    color:green;
+    font-family:'RoyalAcid',sans-serif;
+}
+.black{
+    color:black;
+    font-family:'AllRightsReserved';
+    font-size:350%
+}
+
+
+
+#projects{
+    position:fixed;
+    height:500px;
+    width:500px;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+#project-view{
+    height:80%;
+    width:80%;
+    margin:0px 20px 0px 20px;
+    border-radius:50%;
+    border:1px solid black;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
 
 
 

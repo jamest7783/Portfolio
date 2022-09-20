@@ -13,6 +13,7 @@ const LinkLayer=({styleIndex,setStyleIndex})=>{
         setStyleIndex(id)
     }
     
+    
 
     return(
         <div id='link-layer' 

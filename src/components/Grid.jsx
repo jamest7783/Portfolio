@@ -2,7 +2,7 @@ import styled,{keyframes} from 'styled-components'
 import { useEffect } from 'react'
 import { useState } from 'react'
  
-const Grid=({styleIndex})=>{
+const Grid=({styleIndex,class_})=>{
 
     let units=[]
     let row=1
@@ -40,7 +40,7 @@ const Grid=({styleIndex})=>{
     return(
         <div> 
             <div id='grid'>
-                {styleIndex===0 && units}
+                {class_==='grid' && units}
             </div> 
         </div>
     )

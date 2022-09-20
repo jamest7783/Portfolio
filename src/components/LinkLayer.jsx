@@ -2,9 +2,8 @@ import { useState } from "react"
 import {styles} from '../styles'
 
 
-const LinkLayer=({styleIndex,setStyleIndex})=>{
+const LinkLayer=({styleIndex,setStyleIndex,class_,setClass})=>{
 
-    const [class_,setClass]=useState('moo')
     const [showContact,setShowContact]=useState(false)
     const link=(path)=>{window.open(path,'_blank')}
     

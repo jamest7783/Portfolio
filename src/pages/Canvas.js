@@ -11,16 +11,14 @@ const Canvas=({styles,styleIndex,setStyleIndex})=>{
 
     return(
         <div id='canvas'>
+            {class_==='grid' && <Grid class_={class_}/>}
             <GlobeWindow/>
             <LinkLayer
-                styleIndex={styleIndex} 
-                setStyleIndex={setStyleIndex}
                 class_={class_}
                 setClass={setClass}
             />
-            {class_!='grid' && <Sphere styleIndex={styleIndex}/>}
-            {class_==='grid' && <Grid styleIndex={styleIndex} class_={class_}/>}
-            {/* {styleIndex==2 && <Projects/>} */}
+            {(class_!='grid' && class_!='purple') && <Sphere class_={class_}/>}
+            {class_==='purple' && <Projects/>}
         </div>
     )
 }

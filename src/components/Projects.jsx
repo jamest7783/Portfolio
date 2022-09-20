@@ -1,10 +1,10 @@
 const Projects=()=>{
 
     return(
-        <div id='projects'>
-            <div>X</div>
+        <div id='projects' style={{fontFamily:'GeminiMoon'}}>
+            <div>x</div>
             <div id='project-view'>projects</div>
-            <div>X</div>
+            <div>x</div>
         </div>
     )
 }

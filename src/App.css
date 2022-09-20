@@ -81,13 +81,13 @@
     justify-content:space-between;
 }
 @font-face{
-    font-family: 'Seize';
-    src: url('assets/COMIZ___.TTF') format('truetype');
+    font-family: 'Code';
+    src: url('assets/CODE\ Light.otf') format('truetype');
 }
 button{
     height:35px;
     width:100px;
-    font-family:'Seize',sans-serif;
+    font-family:'Code',sans-serif;
     font-size: xx-large;
     background:transparent;
     display:flex;
@@ -138,23 +138,25 @@ button:active{
 button:hover{
     font-weight:bold;
 }
-
 #_0{animation-delay: -50s;}
 #_1{animation-delay: -100s;}
 #_2{animation-delay: -150s;}
 #_3{animation-delay: -200s;}
 #_4{animation-delay: -250s;}
+#_6{animation-delay: -300s;}
 #_5{
     animation:none;
-    font-size:x-large;
+    font-family:'GeminiMoon';
+    font-size:xx-large;
     position:fixed;
-    width:480px;
-    height:45px;
+    color:blue;
+    width:420px;
+    height:35px;
     display:flex;
     justify-content:center;
     align-items:center;
-    border-radius:3px;
-    background:black;
+    border-radius:5px;
+    backdrop-filter:blur(10px);
 }
 @keyframes orbit{
     0%{transform:rotate(0deg) translateX(260px) rotate(0deg);}
@@ -212,23 +214,23 @@ button:hover{
 button{
     height:35px;
     width:100px;
-
     font-size: xx-large;
     background:transparent;
     display:flex;
     justify-content:center;
+    flex-direction:column;
     align-items:center;
     border:none;
     cursor:pointer;
     position:fixed;
-    animation: orbit 250s linear infinite;
+    animation:orbit 300s linear infinite;
 }
 button:active{
     cursor:grabbing;
 }
 @font-face{
-    font-family: 'neon';
-    src: url('assets/neon.ttf') format('truetype');
+    font-family: 'GeminiMoon';
+    src: url('assets/Gemini\ Moon.otf') format('truetype');
 }
 @font-face{
     font-family: 'Zector';
@@ -239,20 +241,24 @@ button:active{
     src: url('assets/Royalacid_o.ttf') format('truetype');
 }
 @font-face{
-    font-family: 'Prisma';
-    src: url('assets/Prisma.ttf') format('truetype');
-}
-@font-face{
-    font-family: 'CorruptedFile';
-    src: url('assets/Corrupted\ File.ttf') format('truetype');
-}
-@font-face{
     font-family: 'AllRightsReserved';
     src: url('assets/All\ rights\ reserved.ttf') format('truetype');
 }
+@font-face{
+    font-family: 'Karmatic';
+    src: url('assets/ka1.ttf') format('truetype');
+}
+@font-face{
+    font-family: 'OnStreet';
+    src: url('assets/docallismeonstreet.otf') format('truetype');
+}
+@font-face{
+    font-family: 'FakeHope';
+    src: url('assets/FakeHope.ttf') format('truetype');
+}
 .red{
     color:red;
-    font-family:'neon',sans-serif;
+    font-family:'GeminiMoon',sans-serif;
 }
 .blue{
     color:blue;
@@ -260,7 +266,8 @@ button:active{
 }
 .orange{
     color:orange;
-    font-family:'Seize',sans-serif;
+    font-family:'FakeHope',sans-serif;
+    font-size:xxx-large;
 }
 .green{
     color:green;
@@ -271,9 +278,61 @@ button:active{
     font-family:'AllRightsReserved';
     font-size:350%
 }
-
-
-
+.purple{
+    color:purple;
+    font-family:'OnStreet';
+    font-size:300%
+}
+.click-to-nav{position: fixed;}
+#hover-linkedIn{
+    width:150%;
+    font-size:small;
+    bottom:33px;
+    right:-17px;
+    color:red;
+}
+#hover-resume-top{
+    width:250%;
+    font-size:xx-large;
+    bottom:39px;
+    right:-53px;
+    color:blue;
+}
+#hover-github-top{
+    width:250%;
+    font-size:large;
+    bottom:39px;
+    right:-40px;
+    color:green;
+}
+#hover-github-bottom{
+    width:250%;
+    font-size:large;
+    top:39px;
+    right:-110px;
+    color:green;
+}
+#hover-resume-bottom{
+    width:250%;
+    font-size:xx-large;
+    top:37px;
+    right:-97px;
+    color:red;
+}
+#hover-projects-top{
+    width:250%;
+    font-size:xx-large;
+    bottom:37px;
+    right:-45px;
+    color:red;
+}
+#hover-projects-bottom{
+    width:250%;
+    font-size:xx-large;
+    top:37px;
+    right:-131px;
+    color:orange;
+}
 #projects{
     position:fixed;
     height:500px;

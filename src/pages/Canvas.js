@@ -14,12 +14,14 @@ const Canvas=({styles,styleIndex,setStyleIndex})=>{
         <div id='canvas'>
             {class_==='grid' && <Grid class_={class_}/>}
             <GlobeWindow/>
+            {!viewProjects &&
             <LinkLayer
                 class_={class_}
                 setClass={setClass}
                 viewProjects={viewProjects}
                 setViewProjects={setViewProjects}
             />
+            }
             {(class_!='grid' && !viewProjects) && <Sphere class_={class_}/>}
             {(class_==='purple' && viewProjects) && <Projects setViewProjects={setViewProjects}/>}
         </div>

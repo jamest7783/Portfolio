@@ -343,15 +343,22 @@ button:active{
     justify-content:center;
     align-items:center;
 }
-#project-view{
-    height:100%;
-    width:100%;
+
+
+
+.project-view{
+    height:90%;
+    width:90%;
     border-radius:50%;
     display:flex;
     flex-direction:column;
-    justify-content:center;
-    align-items:center;
+    justify-content:flex-start;
+    align-items:flex-start;
 }
+
+
+
+
 #exit-projects{
     display:flex;
     justify-content:center;
@@ -431,22 +438,17 @@ button:active{
     background-size:contain;
     background-repeat:no-repeat;
 }
-#quickChart{
+#QuickChart{
+    font-family:'arial';
+    font-size:45px;
+    font-weight:bold;
+}
+#CoffeeLink{
     font-family:'arial';
     font-size:45px;
     font-weight:bold;
 }
 #Dividend{
-    content: '';
-    height:100px;
-    width:200px;
-    background:url('./assets/Dividend\ Logo.png');
-    background-size:contain;
-    background-repeat:no-repeat;
-    font-size:45px;
-    font-weight:bold;
-}
-#quickChart{
     font-family:'arial';
     font-size:45px;
     font-weight:bold;
@@ -456,8 +458,80 @@ button:active{
     font-size:45px;
     font-weight:bold;
 }
-
-
+#project-container{
+    height:420px;
+    display:flex;
+}
+#screen{
+    border-radius:10px;
+    display:flex;
+    /* outline:1px solid black; */
+    border-radius:10px;
+    outline-offset:-10px;
+}
+#stack{
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-start;
+    align-items:center;
+}
+.icon{
+    height:80px;
+    width:80px;
+    margin-left:10px;
+}
+#sql{
+    background:url('assets/postgres-icon.png');
+    background-size:contain;
+    background-repeat:no-repeat;
+}
+#express{
+    background:url('assets/express-icon.png');
+    background-size:contain;
+    background-repeat:no-repeat;
+}
+#react{
+    background:url('assets/react-icon.png');
+    background-size:contain;
+    background-repeat:no-repeat;
+}
+#nodejs{
+    background:url('assets/nodejs-icon.png');
+    background-size:contain;
+    background-repeat:no-repeat;
+}
+#mongo{
+    background:url('assets/mongo-icon.png');
+    background-size:contain;
+    background-repeat:no-repeat;
+}
+#html{
+    background:url('assets/html-icon.png');
+    background-size:contain;
+    background-repeat:no-repeat;
+}
+#css{
+    background:url('assets/css-icon.png');
+    background-size:80%;
+    background-position:center;
+    background-repeat:no-repeat;
+    filter:grayscale(2);
+}
+#describe{
+    height:20%;
+    width:100%;
+}
+#description{
+    font-size:small;
+}
+#dividend-img{
+    height:340px;
+    width:520px;
+    background:url('./assets/dividend.png');
+    background-size:90%;
+    background-position:center;
+    background-repeat:no-repeat;
+}
 
  
   

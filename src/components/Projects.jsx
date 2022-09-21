@@ -1,9 +1,8 @@
 import ReactPlayer from 'react-player/lazy'
 import {useState} from 'react'
-import quickChartVideo from './quickChart.mov'
-import alienVideo from './alienInvasion.mov'
-import kohiVideo from './kohi.mov'
-
+import quickChartVideo from '../assets/quickChart.mov'
+import alienVideo from '../assets/alienInvasion.mov'
+import kohiVideo from '../assets/kohi.mov'
 
 const Projects=({setViewProjects})=>{
 

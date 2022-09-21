@@ -1,6 +1,4 @@
-import { useState } from "react"
-import {styles} from '../styles'
-
+import {useState} from 'react'
 
 const LinkLayer=({class_,setClass,viewProjects,setViewProjects})=>{
 
@@ -93,7 +91,7 @@ const LinkLayer=({class_,setClass,viewProjects,setViewProjects})=>{
                         {showSkills && 'JWT-Auth' || 'Projects' }
                         {revealProjects && <div className='click-to-nav' id='hover-projects-bottom'>
                         view
-                    </div>}
+                        </div>}
                 </button>
             </div>}
         </div>

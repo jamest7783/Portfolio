@@ -1,5 +1,3 @@
-import {styles} from '../styles'
-
 const Sphere=({class_})=>{
 
     return(

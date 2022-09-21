@@ -1,6 +1,4 @@
 import styled,{keyframes} from 'styled-components'
-import { useEffect } from 'react'
-import { useState } from 'react'
  
 const Grid=({styleIndex,class_})=>{
 

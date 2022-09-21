@@ -1,6 +1,7 @@
 import styled,{keyframes} from 'styled-components'
+import React from 'react'
  
-const Grid=({styleIndex,class_})=>{
+const Grid=React.memo(props=>{
 
     let units=[]
     let row=1
@@ -38,9 +39,9 @@ const Grid=({styleIndex,class_})=>{
     return(
         <div> 
             <div id='grid'>
-                {class_==='grid' && units}
+                {units}
             </div> 
         </div>
     )
-}
+})
 export default Grid

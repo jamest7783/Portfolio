@@ -12,7 +12,8 @@ const LinkLayer=({class_,setClass,viewProjects,setViewProjects})=>{
     
     return(
         <div id='link-layer' 
-            style={{outline:`5px double ${class_}`}}>
+            // style={{outline:`5px double ${class_}`}}
+            >
             {!viewProjects && 
             <div id='link-layer-buttons'>
                 <button className={class_} id='_0'  

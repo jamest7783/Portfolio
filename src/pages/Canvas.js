@@ -12,7 +12,7 @@ const Canvas=({styles,styleIndex,setStyleIndex})=>{
 
     return(
         <div id='canvas'>
-            {class_==='grid' && <Grid class_={class_}/>}
+            <Grid/>
             <GlobeWindow/>
             {!viewProjects &&
             <LinkLayer

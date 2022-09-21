@@ -16,7 +16,7 @@ const Projects=({setViewProjects})=>{
     ]
 
     return(
-        <div id='projects'>
+        <div id='projects' >
 
             <button id='projects-go-left'
                 onClick={(e)=>{projectIndex!=0?setProjectIndex((projectIndex-1)):setProjectIndex(projects.length-1)}}>   

@@ -9,6 +9,12 @@ const LinkLayer=({class_,setClass,viewProjects,setViewProjects})=>{
     const [showClickGitHub,setShowClickGitHub]=useState(false)
     const [revealProjects,setRevealProjects]=useState(false)
     const link=(path)=>{window.open(path,'_blank')}
+
+    const setSelfClass=(id)=>{
+        
+
+    }
+
     
     return(
         <div id='link-layer' 

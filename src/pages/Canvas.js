@@ -22,7 +22,7 @@ const Canvas=({styles,styleIndex,setStyleIndex})=>{
                 setViewProjects={setViewProjects}
             />
             }
-            {(class_!='grid' && !viewProjects) && <Sphere class_={class_}/>}
+            {(class_!='grid' && !viewProjects && class_!='red') && <Sphere class_={class_}/>}
             {(class_==='purple' && viewProjects) && <Projects setViewProjects={setViewProjects}/>}
         </div>
     )

@@ -19,7 +19,7 @@
     grid-template:
         repeat(40,minmax(9px,9px))/
         repeat(40,minmax(9px,9px));
-    background: radial-gradient(black,white);
+    background: radial-gradient(rgb(104, 104, 104),white);
     background-clip: text;
     color: transparent;
     transform: rotateY(0deg) rotate(-12deg);
@@ -151,12 +151,10 @@ button:hover{
     position:fixed;
     color:blue;
     width:420px;
-    height:35px;
+    height:55px;
     display:flex;
     justify-content:center;
     align-items:center;
-    border-radius:5px;
-    backdrop-filter:blur(10px);
 }
 @keyframes orbit{
     0%{transform:rotate(0deg) translateX(260px) rotate(0deg);}
@@ -341,6 +339,7 @@ button:active{
     display:flex;
     justify-content:center;
     align-items:center;
+    background:white;
 }
 .project-view{
     height:90%;
@@ -433,33 +432,32 @@ button:active{
 #QuickChart{
     font-family:'arial';
     font-size:45px;
-    font-weight:bold;
 }
 #CoffeeLink{
-    font-family:'arial';
+    font-family:'verdana';
     font-size:45px;
-    font-weight:bold;
 }
 #Dividend{
     font-family:'arial';
     font-size:45px;
-    font-weight:bold;
 }
 #AlienInvasion{
     font-family:'arial';
     font-size:45px;
-    font-weight:bold;
 }
 #project-container{
     height:420px;
     display:flex;
 }
 #screen{
+    margin:10px;
     border-radius:10px;
     display:flex;
-    /* outline:1px solid black; */
+    outline:1px solid black;
     border-radius:10px;
-    outline-offset:-10px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
 }
 #stack{
     display:flex;
@@ -514,7 +512,8 @@ button:active{
     width:100%;
 }
 #description{
-    font-size:small;
+    font-size:medium;
+    font-weight:lighter;
 }
 #dividend-img{
     height:340px;

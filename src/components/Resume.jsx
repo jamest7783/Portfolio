@@ -31,7 +31,7 @@ const Resume=({setResume})=>{
                 className='header-button'
                 id='minimize-button'
                 onClick={(e)=>{
-                    setAction('minimize')
+                    if(action==='fullscreen'){setAction('minimize')}
                 }}
                 >
                 - 
@@ -40,11 +40,14 @@ const Resume=({setResume})=>{
                 className='header-button' 
                 id='exit-button'
                 onClick={(e)=>{
-                    setResume(false)
+                    setAction('exit')
                 }}
                 >x</button>
             </div>
-            {action==='hold' && <div id='click-for-fullscreen'>click for fullscreen</div>}
+            <div id='resume-pdf'>
+
+            </div>
+            {/* {action==='hold' && <div id='click-for-fullscreen'>fullscreen</div>} */}
         </div>
     )
 }

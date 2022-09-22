@@ -42,7 +42,7 @@ const LinkLayer=({class_,setClass,viewProjects,setViewProjects,setResume,resume}
                     </div>}
                     {showSkills && 'SQL MongoDb' || 'Resume' }
                     {showClickResume && <div className='click-to-nav' id='hover-resume-bottom'>
-                        navigate
+                        view
                     </div>}
                 </button>
                 <button className={class_} id='_2' 

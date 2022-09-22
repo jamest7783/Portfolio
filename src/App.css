@@ -534,10 +534,10 @@ button:active{
     flex-direction:column;
     justify-content:flex-start;
     align-items:center;
-    background:url('assets/resume.png');
+    /* background:url('assets/resume.png');
     background-position:center;
     background-size:100%;
-    background-repeat:no-repeat;
+    background-repeat:no-repeat; */
 }
 #header-buttons{
     width:100%;
@@ -556,39 +556,43 @@ button:active{
     width:20px;
     animation:none;
     position: relative;
-    border:1px solid black;
     border-radius:50%;
     font-family:arial;
     font-size:90%;
 }
 .header-button:hover{
-    background:black;
+    
 }
-#exit-button:hover{
-    background:red;
+#exit-button{
+    background:rgb(245, 35, 16);
 }
-#minimize-button:hover{
+#minimize-button{
     background:yellow;
+    border:1px solid black;
 }
-#fullscreen-button:hover{
-    background:green;
+#fullscreen-button{
+    background:rgb(14, 199, 14);
 }
 #hold{
-
+    animation: appear .5s linear forwards;  
+}
+@keyframes appear{
+    0%{scale:0%;}
+    100%{scale:100%;}
 }
 @keyframes gofullscreen{
     0%{scale:100%;}
     100%{scale:150%;}
 }
 #fullscreen{
-    animation:gofullscreen 1s linear 0s 1 forwards;
+    animation:gofullscreen .5s linear 0s 1 forwards;
 }
 @keyframes minimize{
     0%{scale:150%;}
     100%{scale:100%;}
 }
 #minimize{
-    animation:minimize 1s linear 0s 1 forwards;
+    animation:minimize .5s linear 0s 1 forwards;
 }
 @keyframes blink{
     0%,100%{scale:125%;}
@@ -597,7 +601,7 @@ button:active{
 #click-for-fullscreen{
     position:absolute;
     top:-70px;
-    right:-90px;
+    right:-50px;
     animation: blink 3s linear infinite;
     font-family:sans-serif;
     color:green;
@@ -613,7 +617,7 @@ button:active{
     margin-top:5px;
     border-radius:5px;
     animation:blink-text 2s linear infinite;
-    border:1px double black;
+    /* border:1px double black; */
 }
 #download:hover{
     animation:none;
@@ -633,5 +637,13 @@ button:active{
     100%{transform:scale(0);}
 }
 #exit{
-    animation: shrink 1s linear forwards;
+    animation: shrink 0.5s linear forwards;
+}
+#resume-pdf{
+    height:220%;
+    width:100%;
+    background:url('./assets/resume.png');
+    background-size:contain;
+    background-position:center;
+    background-repeat:no-repeat;
 }

@@ -1,6 +1,6 @@
 import {useState} from 'react'
 
-const LinkLayer=({class_,setClass,viewProjects,setViewProjects})=>{
+const LinkLayer=({class_,setClass,viewProjects,setViewProjects,setResume,resume})=>{
 
     const [showContact,setShowContact]=useState(false)
     const [showSkills,setShowSkills]=useState(false)
@@ -9,16 +9,9 @@ const LinkLayer=({class_,setClass,viewProjects,setViewProjects})=>{
     const [showClickGitHub,setShowClickGitHub]=useState(false)
     const [revealProjects,setRevealProjects]=useState(false)
     const link=(path)=>{window.open(path,'_blank')}
-
-    const setSelfClass=(id)=>{
-        
-
-    }
-
-    
     return(
         <div id='link-layer' 
-            // style={{outline:`5px double ${class_}`}}
+            style={{outline:`5px double ${class_}`}}
             >
             {!viewProjects && 
             <div id='link-layer-buttons'>
@@ -39,7 +32,11 @@ const LinkLayer=({class_,setClass,viewProjects,setViewProjects})=>{
                         setShowClickResume(true)
                     }}
                     onMouseLeave={(e)=>{setShowClickResume(false)}}
-                    onClick={(e)=>{link('https://docs.google.com/document/d/1jn55T48Sldtizv9ooG1dBnpojXuOQ5ZSqSI1ruLhKV0/edit?usp=sharing')}}>
+                    onClick={(e)=>{
+
+                        // link('https://docs.google.com/document/d/1jn55T48Sldtizv9ooG1dBnpojXuOQ5ZSqSI1ruLhKV0/edit?usp=sharing')
+                        resume?setResume(false):setResume(true)
+                        }}>
                     {showClickResume && <div className='click-to-nav' id='hover-resume-top'>
                         click to
                     </div>}

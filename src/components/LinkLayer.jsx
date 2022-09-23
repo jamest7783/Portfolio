@@ -56,7 +56,7 @@ const LinkLayer=({class_,setClass,viewProjects,setViewProjects,setResume,resume}
                     {showClickGitHub && <div className='click-to-nav' id='hover-github-top'>
                         click to
                     </div>}
-                    {showSkills && 'JavaScript Python' || 'GitHub' }
+                    {showSkills && (<div className='skill'>JavaScript Python<div id='python-icon'></div></div>) || 'GitHub' }
                     {showClickGitHub && <div className='click-to-nav' id='hover-github-bottom'>
                         navigate
                     </div>}

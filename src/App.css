@@ -556,9 +556,6 @@ button:active{
     font-family:arial;
     font-size:90%;
 }
-.header-button:hover{
-    
-}
 #exit-button{
     background:rgb(245, 35, 16);
 }

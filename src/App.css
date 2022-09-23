@@ -534,10 +534,6 @@ button:active{
     flex-direction:column;
     justify-content:flex-start;
     align-items:center;
-    /* background:url('assets/resume.png');
-    background-position:center;
-    background-size:100%;
-    background-repeat:no-repeat; */
 }
 #header-buttons{
     width:100%;

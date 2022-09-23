@@ -1,4 +1,3 @@
-import ReactPlayer from 'react-player/lazy'
 import {useState} from 'react'
 import quickChartVideo from '../assets/quickChart.mov'
 import alienVideo from '../assets/alienInvasion.mov'
@@ -18,13 +17,11 @@ const Projects=({setViewProjects})=>{
         <div id='projects' >
 
             <button id='projects-go-left'
-                onClick={(e)=>{projectIndex!=0?setProjectIndex((projectIndex-1)):setProjectIndex(projects.length-1)}}>   
+                onClick={(e)=>{projectIndex!==0?setProjectIndex((projectIndex-1)):setProjectIndex(projects.length-1)}}>   
             </button>
             <button id='projects-go-right'
-                onClick={(e)=>{projectIndex!=projects.length-1?setProjectIndex((projectIndex+1)):setProjectIndex(0)}}>     
+                onClick={(e)=>{projectIndex!==projects.length-1?setProjectIndex((projectIndex+1)):setProjectIndex(0)}}>     
             </button>
-            {/* <button id='projects-go-up'></button>
-            <button id='projects-go-down'></button> */}
             <button id='exit-projects' onClick={(e)=>{setViewProjects(false)}}>
                 Click to Exit
             </button>
@@ -35,7 +32,7 @@ const Projects=({setViewProjects})=>{
                 </div>
                 <div id='project-container'>
                     <div id='screen'>
-                        {projectIndex!=1 && <video width='520' height='340' autoPlay src={projects[projectIndex].movie} loop></video>}
+                        {projectIndex!==1 && <video width='520' height='340' autoPlay src={projects[projectIndex].movie} loop></video>}
                         {projectIndex===1 && <div id='dividend-img'></div>}
                     </div>
                     <div id='stack'>                      

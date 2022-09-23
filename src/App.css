@@ -465,11 +465,6 @@ button:active{
     justify-content:flex-start;
     align-items:center;
 }
-.icon{
-    height:80px;
-    width:80px;
-    margin-left:10px;
-}
 #sql{
     background:url('assets/postgres-icon.png');
     background-size:contain;
@@ -506,6 +501,12 @@ button:active{
     background-position:center;
     background-repeat:no-repeat;
     filter:grayscale(2);
+}
+.icon{
+    height:60px;
+    width:60px;
+    margin-left:10px;
+    margin-top:10px;
 }
 #description{
     font-size:medium;
@@ -646,7 +647,7 @@ button:active{
 #project-links{
     height:20%;
     margin-left:10px;
-    margin-bottom:17px;
+    margin-bottom:20px;
     display:flex;
     font-size:medium;
 }
@@ -655,7 +656,7 @@ button:active{
     animation:none;
     font-family:'Zector';
     font-size:medium;
-    width:140px;
+    width:100px;
     height:25px;
     border-radius:5px;
 }
@@ -668,5 +669,15 @@ button:active{
     margin-left:10px;
     display:flex;
     align-items:flex-end;
+}
+#tech-used{
+    display:flex;
+    font-family:'Zector';
+    font-size:medium;
+    margin-left:10px;
+    flex-wrap:wrap;
+}
+.tech{
+    margin-right:20px;
 }
 

@@ -235,8 +235,8 @@ button:active{
     src: url('assets/Zector.ttf') format('truetype');
 }
 @font-face{
-    font-family: 'RoyalAcid';
-    src: url('assets/Royalacid_o.ttf') format('truetype');
+    font-family: 'Dimitri';
+    src: url('assets/DIMIS___.TTF') format('truetype');
 }
 @font-face{
     font-family: 'AllRightsReserved';
@@ -251,8 +251,8 @@ button:active{
     src: url('assets/docallismeonstreet.otf') format('truetype');
 }
 @font-face{
-    font-family: 'FakeHope';
-    src: url('assets/FakeHope.ttf') format('truetype');
+    font-family: 'Fe-Font';
+    src: url('assets/FE-FONT.TTF') format('truetype');
 }
 .red{
     color:red;
@@ -264,12 +264,13 @@ button:active{
 }
 .orange{
     color:orange;
-    font-family:'FakeHope',sans-serif;
-    font-size:xxx-large;
+    font-family:'Fe-Font',sans-serif;
+    font-size:xx-large;
+    font-weight:light;
 }
 .green{
     color:green;
-    font-family:'RoyalAcid',sans-serif;
+    font-family:'Dimitri',sans-serif;
 }
 .black{
     color:black;
@@ -299,15 +300,15 @@ button:active{
 #hover-github-top{
     width:250%;
     font-size:large;
-    bottom:39px;
-    right:-40px;
+    bottom:33px;
+    right:-52px;
     color:green;
 }
 #hover-github-bottom{
     width:250%;
     font-size:large;
-    top:39px;
-    right:-110px;
+    top:43px;
+    right:-100px;
     color:green;
 }
 #hover-resume-bottom{
@@ -451,6 +452,7 @@ button:active{
 }
 #screen{
     margin:10px;
+    height:400px;
     border-radius:10px;
     display:flex;
     outline:1px solid black;
